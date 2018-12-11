@@ -121,7 +121,7 @@
                                             <div class="available_bar"><span style="width:17%"></span></div>
                                         </div>
                                         <div
-                                                class="deals_timer d-flex flex-row align-items-center justify-content-start">
+                                            class="deals_timer d-flex flex-row align-items-center justify-content-start">
                                             <div class="deals_timer_title_container">
                                                 <div class="deals_timer_title">Hurry Up</div>
                                                 <div class="deals_timer_subtitle">Offer ends in:</div>
@@ -166,7 +166,7 @@
                                             <div class="available_bar"><span style="width:17%"></span></div>
                                         </div>
                                         <div
-                                                class="deals_timer d-flex flex-row align-items-center justify-content-start">
+                                            class="deals_timer d-flex flex-row align-items-center justify-content-start">
                                             <div class="deals_timer_title_container">
                                                 <div class="deals_timer_title">Hurry Up</div>
                                                 <div class="deals_timer_subtitle">Offer ends in:</div>
@@ -211,7 +211,7 @@
                                             <div class="available_bar"><span style="width:17%"></span></div>
                                         </div>
                                         <div
-                                                class="deals_timer d-flex flex-row align-items-center justify-content-start">
+                                            class="deals_timer d-flex flex-row align-items-center justify-content-start">
                                             <div class="deals_timer_title_container">
                                                 <div class="deals_timer_title">Hurry Up</div>
                                                 <div class="deals_timer_subtitle">Offer ends in:</div>
@@ -242,10 +242,10 @@
 
                         <div class="deals_slider_nav_container">
                             <div class="deals_slider_prev deals_slider_nav"><i
-                                        class="fas fa-chevron-left ml-auto"></i>
+                                    class="fas fa-chevron-left ml-auto"></i>
                             </div>
                             <div class="deals_slider_next deals_slider_nav"><i
-                                        class="fas fa-chevron-right ml-auto"></i>
+                                    class="fas fa-chevron-right ml-auto"></i>
                             </div>
                         </div>
                     </div>
@@ -270,26 +270,22 @@
                                         <div class="featured_slider_item">
                                             <div class="border_active"></div>
                                             <div
-                                                    class="product_item discount d-flex flex-column align-items-center justify-content-center text-center">
+                                                class="product_item discount d-flex flex-column align-items-center justify-content-center text-center">
                                                 <div
-                                                        class="product_image d-flex flex-column align-items-center justify-content-center">
-                                                    <img src="{{ url('/') .'/images/'. $product->images }}" alt="">
+                                                    class="product_image d-flex flex-column align-items-center justify-content-center">
+                                                    <img src="{{ url('/') .'/uploads/products/'. $product->images }}"
+                                                         alt="">
                                                 </div>
                                                 <div class="product_content">
-                                                    <div class="product_price discount">
-                                                        $225<span>{{ $product->price }}</span></div>
                                                     <div class="product_name">
                                                         <div><a href="product.blade.php">{{ $product->name }}</a></div>
                                                     </div>
+                                                    <div class="product_price discount">
+                                                        {{ number_format($product->price) }} VNĐ
+                                                    </div>
+                                                    <div class="product_old">{{ number_format($product->price) }}VNĐ
+                                                    </div>
                                                     <div class="product_extras">
-                                                        <div class="product_color">
-                                                            <input type="radio" checked name="product_color"
-                                                                   style="background:#b19c83">
-                                                            <input type="radio" name="product_color"
-                                                                   style="background:#000000">
-                                                            <input type="radio" name="product_color"
-                                                                   style="background:#999999">
-                                                        </div>
                                                         <button class="product_cart_button">Add to Cart</button>
                                                     </div>
                                                 </div>
@@ -304,36 +300,30 @@
                                 </div>
                                 <div class="featured_slider_dots_cover"></div>
                             </div>
-
                             <!-- Product Panel -->
-
-                            <div class="product_panel panel">
+                            <div class="product_panel panel active">
                                 <div class="featured_slider slider">
                                 @foreach($products as $product)
                                     <!-- Slider Item -->
                                         <div class="featured_slider_item">
                                             <div class="border_active"></div>
                                             <div
-                                                    class="product_item discount d-flex flex-column align-items-center justify-content-center text-center">
+                                                class="product_item discount d-flex flex-column align-items-center justify-content-center text-center">
                                                 <div
-                                                        class="product_image d-flex flex-column align-items-center justify-content-center">
-                                                    <img src="{{ url('/') .'/images/'. $product->images }}" alt="">
+                                                    class="product_image d-flex flex-column align-items-center justify-content-center">
+                                                    <img src="{{ url('/') .'/uploads/products/'. $product->images }}"
+                                                         alt="">
                                                 </div>
                                                 <div class="product_content">
-                                                    <div class="product_price discount">
-                                                        $225<span>{{ $product->price }}</span></div>
                                                     <div class="product_name">
                                                         <div><a href="product.blade.php">{{ $product->name }}</a></div>
                                                     </div>
+                                                    <div class="product_price discount">
+                                                        {{ number_format($product->price) }} VNĐ
+                                                    </div>
+                                                    <div class="product_old">{{ number_format($product->price) }}VNĐ
+                                                    </div>
                                                     <div class="product_extras">
-                                                        <div class="product_color">
-                                                            <input type="radio" checked name="product_color"
-                                                                   style="background:#b19c83">
-                                                            <input type="radio" name="product_color"
-                                                                   style="background:#000000">
-                                                            <input type="radio" name="product_color"
-                                                                   style="background:#999999">
-                                                        </div>
                                                         <button class="product_cart_button">Add to Cart</button>
                                                     </div>
                                                 </div>
@@ -348,49 +338,44 @@
                                 </div>
                                 <div class="featured_slider_dots_cover"></div>
                             </div>
-
                             <!-- Product Panel -->
-
-                            <div class="product_panel panel">
+                            <div class="product_panel panel active">
                                 <div class="featured_slider slider">
                                 @foreach($products as $product)
                                     <!-- Slider Item -->
-                                    <div class="featured_slider_item">
-                                        <div class="border_active"></div>
-                                        <div
-                                                class="product_item discount d-flex flex-column align-items-center justify-content-center text-center">
+                                        <div class="featured_slider_item">
+                                            <div class="border_active"></div>
                                             <div
+                                                class="product_item discount d-flex flex-column align-items-center justify-content-center text-center">
+                                                <div
                                                     class="product_image d-flex flex-column align-items-center justify-content-center">
-                                                <img src="{{ url('/') .'/images/'. $product->images }}" alt=""></div>
-                                            <div class="product_content">
-                                                <div class="product_price discount">$225<span>{{ $product->price }}</span></div>
-                                                <div class="product_name">
-                                                    <div><a href="product.blade.php">{{ $product->name }}</a></div>
+                                                    <img src="{{ url('/') .'/uploads/products/'. $product->images }}"
+                                                         alt="">
                                                 </div>
-                                                <div class="product_extras">
-                                                    <div class="product_color">
-                                                        <input type="radio" checked name="product_color"
-                                                               style="background:#b19c83">
-                                                        <input type="radio" name="product_color"
-                                                               style="background:#000000">
-                                                        <input type="radio" name="product_color"
-                                                               style="background:#999999">
+                                                <div class="product_content">
+                                                    <div class="product_name">
+                                                        <div><a href="product.blade.php">{{ $product->name }}</a></div>
                                                     </div>
-                                                    <button class="product_cart_button">Add to Cart</button>
+                                                    <div class="product_price discount">
+                                                        {{ number_format($product->price) }} VNĐ
+                                                    </div>
+                                                    <div class="product_old">{{ number_format($product->price) }}VNĐ
+                                                    </div>
+                                                    <div class="product_extras">
+                                                        <button class="product_cart_button">Add to Cart</button>
+                                                    </div>
                                                 </div>
+                                                <div class="product_fav"><i class="fas fa-heart"></i></div>
+                                                <ul class="product_marks">
+                                                    <li class="product_mark product_discount">-25%</li>
+                                                    <li class="product_mark product_new">new</li>
+                                                </ul>
                                             </div>
-                                            <div class="product_fav"><i class="fas fa-heart"></i></div>
-                                            <ul class="product_marks">
-                                                <li class="product_mark product_discount">-25%</li>
-                                                <li class="product_mark product_new">new</li>
-                                            </ul>
                                         </div>
-                                    </div>
-
+                                    @endforeach
                                 </div>
                                 <div class="featured_slider_dots_cover"></div>
                             </div>
-
                         </div>
                     </div>
 
@@ -532,9 +517,9 @@
                                         <div class="arrivals_slider_item">
                                             <div class="border_active"></div>
                                             <div
-                                                    class="product_item is_new d-flex flex-column align-items-center justify-content-center text-center">
+                                                class="product_item is_new d-flex flex-column align-items-center justify-content-center text-center">
                                                 <div
-                                                        class="product_image d-flex flex-column align-items-center justify-content-center">
+                                                    class="product_image d-flex flex-column align-items-center justify-content-center">
                                                     <img src="images/new_1.jpg" alt=""></div>
                                                 <div class="product_content">
                                                     <div class="product_price">$225</div>
@@ -542,14 +527,6 @@
                                                         <div><a href="product.blade.php">Astro M2 Black</a></div>
                                                     </div>
                                                     <div class="product_extras">
-                                                        <div class="product_color">
-                                                            <input type="radio" checked name="product_color"
-                                                                   style="background:#b19c83">
-                                                            <input type="radio" name="product_color"
-                                                                   style="background:#000000">
-                                                            <input type="radio" name="product_color"
-                                                                   style="background:#999999">
-                                                        </div>
                                                         <button class="product_cart_button">Add to Cart</button>
                                                     </div>
                                                 </div>
@@ -565,9 +542,9 @@
                                         <div class="arrivals_slider_item">
                                             <div class="border_active"></div>
                                             <div
-                                                    class="product_item is_new d-flex flex-column align-items-center justify-content-center text-center">
+                                                class="product_item is_new d-flex flex-column align-items-center justify-content-center text-center">
                                                 <div
-                                                        class="product_image d-flex flex-column align-items-center justify-content-center">
+                                                    class="product_image d-flex flex-column align-items-center justify-content-center">
                                                     <img src="images/new_2.jpg" alt=""></div>
                                                 <div class="product_content">
                                                     <div class="product_price">$379</div>
@@ -575,14 +552,6 @@
                                                         <div><a href="product.blade.php">Transcend T.Sonic</a></div>
                                                     </div>
                                                     <div class="product_extras">
-                                                        <div class="product_color">
-                                                            <input type="radio" checked name="product_color"
-                                                                   style="background:#b19c83">
-                                                            <input type="radio" name="product_color"
-                                                                   style="background:#000000">
-                                                            <input type="radio" name="product_color"
-                                                                   style="background:#999999">
-                                                        </div>
                                                         <button class="product_cart_button active">Add to Cart
                                                         </button>
                                                     </div>
@@ -599,9 +568,9 @@
                                         <div class="arrivals_slider_item">
                                             <div class="border_active"></div>
                                             <div
-                                                    class="product_item is_new d-flex flex-column align-items-center justify-content-center text-center">
+                                                class="product_item is_new d-flex flex-column align-items-center justify-content-center text-center">
                                                 <div
-                                                        class="product_image d-flex flex-column align-items-center justify-content-center">
+                                                    class="product_image d-flex flex-column align-items-center justify-content-center">
                                                     <img src="images/new_3.jpg" alt=""></div>
                                                 <div class="product_content">
                                                     <div class="product_price">$379</div>
@@ -609,14 +578,6 @@
                                                         <div><a href="product.blade.php">Xiaomi Band 2...</a></div>
                                                     </div>
                                                     <div class="product_extras">
-                                                        <div class="product_color">
-                                                            <input type="radio" checked name="product_color"
-                                                                   style="background:#b19c83">
-                                                            <input type="radio" name="product_color"
-                                                                   style="background:#000000">
-                                                            <input type="radio" name="product_color"
-                                                                   style="background:#999999">
-                                                        </div>
                                                         <button class="product_cart_button">Add to Cart</button>
                                                     </div>
                                                 </div>
@@ -632,9 +593,9 @@
                                         <div class="arrivals_slider_item">
                                             <div class="border_active"></div>
                                             <div
-                                                    class="product_item is_new d-flex flex-column align-items-center justify-content-center text-center">
+                                                class="product_item is_new d-flex flex-column align-items-center justify-content-center text-center">
                                                 <div
-                                                        class="product_image d-flex flex-column align-items-center justify-content-center">
+                                                    class="product_image d-flex flex-column align-items-center justify-content-center">
                                                     <img src="images/new_4.jpg" alt=""></div>
                                                 <div class="product_content">
                                                     <div class="product_price">$225</div>
@@ -642,14 +603,6 @@
                                                         <div><a href="product.blade.php">Rapoo T8 White</a></div>
                                                     </div>
                                                     <div class="product_extras">
-                                                        <div class="product_color">
-                                                            <input type="radio" checked name="product_color"
-                                                                   style="background:#b19c83">
-                                                            <input type="radio" name="product_color"
-                                                                   style="background:#000000">
-                                                            <input type="radio" name="product_color"
-                                                                   style="background:#999999">
-                                                        </div>
                                                         <button class="product_cart_button">Add to Cart</button>
                                                     </div>
                                                 </div>
@@ -665,9 +618,9 @@
                                         <div class="arrivals_slider_item">
                                             <div class="border_active"></div>
                                             <div
-                                                    class="product_item is_new d-flex flex-column align-items-center justify-content-center text-center">
+                                                class="product_item is_new d-flex flex-column align-items-center justify-content-center text-center">
                                                 <div
-                                                        class="product_image d-flex flex-column align-items-center justify-content-center">
+                                                    class="product_image d-flex flex-column align-items-center justify-content-center">
                                                     <img src="images/new_5.jpg" alt=""></div>
                                                 <div class="product_content">
                                                     <div class="product_price">$225</div>
@@ -675,14 +628,6 @@
                                                         <div><a href="product.blade.php">Philips BT6900A</a></div>
                                                     </div>
                                                     <div class="product_extras">
-                                                        <div class="product_color">
-                                                            <input type="radio" checked name="product_color"
-                                                                   style="background:#b19c83">
-                                                            <input type="radio" name="product_color"
-                                                                   style="background:#000000">
-                                                            <input type="radio" name="product_color"
-                                                                   style="background:#999999">
-                                                        </div>
                                                         <button class="product_cart_button">Add to Cart</button>
                                                     </div>
                                                 </div>
@@ -698,9 +643,9 @@
                                         <div class="arrivals_slider_item">
                                             <div class="border_active"></div>
                                             <div
-                                                    class="product_item is_new d-flex flex-column align-items-center justify-content-center text-center">
+                                                class="product_item is_new d-flex flex-column align-items-center justify-content-center text-center">
                                                 <div
-                                                        class="product_image d-flex flex-column align-items-center justify-content-center">
+                                                    class="product_image d-flex flex-column align-items-center justify-content-center">
                                                     <img src="images/new_6.jpg" alt=""></div>
                                                 <div class="product_content">
                                                     <div class="product_price">$379</div>
@@ -709,14 +654,6 @@
                                                         </div>
                                                     </div>
                                                     <div class="product_extras">
-                                                        <div class="product_color">
-                                                            <input type="radio" checked name="product_color"
-                                                                   style="background:#b19c83">
-                                                            <input type="radio" name="product_color"
-                                                                   style="background:#000000">
-                                                            <input type="radio" name="product_color"
-                                                                   style="background:#999999">
-                                                        </div>
                                                         <button class="product_cart_button">Add to Cart</button>
                                                     </div>
                                                 </div>
@@ -732,9 +669,9 @@
                                         <div class="arrivals_slider_item">
                                             <div class="border_active"></div>
                                             <div
-                                                    class="product_item is_new d-flex flex-column align-items-center justify-content-center text-center">
+                                                class="product_item is_new d-flex flex-column align-items-center justify-content-center text-center">
                                                 <div
-                                                        class="product_image d-flex flex-column align-items-center justify-content-center">
+                                                    class="product_image d-flex flex-column align-items-center justify-content-center">
                                                     <img src="images/new_7.jpg" alt=""></div>
                                                 <div class="product_content">
                                                     <div class="product_price">$379</div>
@@ -742,14 +679,6 @@
                                                         <div><a href="product.blade.php">Rapoo 7100p Gray</a></div>
                                                     </div>
                                                     <div class="product_extras">
-                                                        <div class="product_color">
-                                                            <input type="radio" checked name="product_color"
-                                                                   style="background:#b19c83">
-                                                            <input type="radio" name="product_color"
-                                                                   style="background:#000000">
-                                                            <input type="radio" name="product_color"
-                                                                   style="background:#999999">
-                                                        </div>
                                                         <button class="product_cart_button">Add to Cart</button>
                                                     </div>
                                                 </div>
@@ -765,9 +694,9 @@
                                         <div class="arrivals_slider_item">
                                             <div class="border_active"></div>
                                             <div
-                                                    class="product_item is_new d-flex flex-column align-items-center justify-content-center text-center">
+                                                class="product_item is_new d-flex flex-column align-items-center justify-content-center text-center">
                                                 <div
-                                                        class="product_image d-flex flex-column align-items-center justify-content-center">
+                                                    class="product_image d-flex flex-column align-items-center justify-content-center">
                                                     <img src="images/new_8.jpg" alt=""></div>
                                                 <div class="product_content">
                                                     <div class="product_price">$225</div>
@@ -775,14 +704,6 @@
                                                         <div><a href="product.blade.php">Canon EF</a></div>
                                                     </div>
                                                     <div class="product_extras">
-                                                        <div class="product_color">
-                                                            <input type="radio" checked name="product_color"
-                                                                   style="background:#b19c83">
-                                                            <input type="radio" name="product_color"
-                                                                   style="background:#000000">
-                                                            <input type="radio" name="product_color"
-                                                                   style="background:#999999">
-                                                        </div>
                                                         <button class="product_cart_button">Add to Cart</button>
                                                     </div>
                                                 </div>
@@ -798,9 +719,9 @@
                                         <div class="arrivals_slider_item">
                                             <div class="border_active"></div>
                                             <div
-                                                    class="product_item is_new d-flex flex-column align-items-center justify-content-center text-center">
+                                                class="product_item is_new d-flex flex-column align-items-center justify-content-center text-center">
                                                 <div
-                                                        class="product_image d-flex flex-column align-items-center justify-content-center">
+                                                    class="product_image d-flex flex-column align-items-center justify-content-center">
                                                     <img src="images/new_1.jpg" alt=""></div>
                                                 <div class="product_content">
                                                     <div class="product_price">$225</div>
@@ -808,14 +729,6 @@
                                                         <div><a href="product.blade.php">Gembird SPK-103</a></div>
                                                     </div>
                                                     <div class="product_extras">
-                                                        <div class="product_color">
-                                                            <input type="radio" checked name="product_color"
-                                                                   style="background:#b19c83">
-                                                            <input type="radio" name="product_color"
-                                                                   style="background:#000000">
-                                                            <input type="radio" name="product_color"
-                                                                   style="background:#999999">
-                                                        </div>
                                                         <button class="product_cart_button">Add to Cart</button>
                                                     </div>
                                                 </div>
@@ -831,9 +744,9 @@
                                         <div class="arrivals_slider_item">
                                             <div class="border_active"></div>
                                             <div
-                                                    class="product_item is_new d-flex flex-column align-items-center justify-content-center text-center">
+                                                class="product_item is_new d-flex flex-column align-items-center justify-content-center text-center">
                                                 <div
-                                                        class="product_image d-flex flex-column align-items-center justify-content-center">
+                                                    class="product_image d-flex flex-column align-items-center justify-content-center">
                                                     <img src="images/new_2.jpg" alt=""></div>
                                                 <div class="product_content">
                                                     <div class="product_price">$379</div>
@@ -841,14 +754,6 @@
                                                         <div><a href="product.blade.php">Canon IXUS 175...</a></div>
                                                     </div>
                                                     <div class="product_extras">
-                                                        <div class="product_color">
-                                                            <input type="radio" checked name="product_color"
-                                                                   style="background:#b19c83">
-                                                            <input type="radio" name="product_color"
-                                                                   style="background:#000000">
-                                                            <input type="radio" name="product_color"
-                                                                   style="background:#999999">
-                                                        </div>
                                                         <button class="product_cart_button">Add to Cart</button>
                                                     </div>
                                                 </div>
@@ -864,9 +769,9 @@
                                         <div class="arrivals_slider_item">
                                             <div class="border_active"></div>
                                             <div
-                                                    class="product_item is_new d-flex flex-column align-items-center justify-content-center text-center">
+                                                class="product_item is_new d-flex flex-column align-items-center justify-content-center text-center">
                                                 <div
-                                                        class="product_image d-flex flex-column align-items-center justify-content-center">
+                                                    class="product_image d-flex flex-column align-items-center justify-content-center">
                                                     <img src="images/new_3.jpg" alt=""></div>
                                                 <div class="product_content">
                                                     <div class="product_price">$379</div>
@@ -875,14 +780,6 @@
                                                         </div>
                                                     </div>
                                                     <div class="product_extras">
-                                                        <div class="product_color">
-                                                            <input type="radio" checked name="product_color"
-                                                                   style="background:#b19c83">
-                                                            <input type="radio" name="product_color"
-                                                                   style="background:#000000">
-                                                            <input type="radio" name="product_color"
-                                                                   style="background:#999999">
-                                                        </div>
                                                         <button class="product_cart_button">Add to Cart</button>
                                                     </div>
                                                 </div>
@@ -898,9 +795,9 @@
                                         <div class="arrivals_slider_item">
                                             <div class="border_active"></div>
                                             <div
-                                                    class="product_item is_new d-flex flex-column align-items-center justify-content-center text-center">
+                                                class="product_item is_new d-flex flex-column align-items-center justify-content-center text-center">
                                                 <div
-                                                        class="product_image d-flex flex-column align-items-center justify-content-center">
+                                                    class="product_image d-flex flex-column align-items-center justify-content-center">
                                                     <img src="images/new_4.jpg" alt=""></div>
                                                 <div class="product_content">
                                                     <div class="product_price">$225</div>
@@ -909,14 +806,6 @@
                                                         </div>
                                                     </div>
                                                     <div class="product_extras">
-                                                        <div class="product_color">
-                                                            <input type="radio" checked name="product_color"
-                                                                   style="background:#b19c83">
-                                                            <input type="radio" name="product_color"
-                                                                   style="background:#000000">
-                                                            <input type="radio" name="product_color"
-                                                                   style="background:#999999">
-                                                        </div>
                                                         <button class="product_cart_button">Add to Cart</button>
                                                     </div>
                                                 </div>
@@ -932,9 +821,9 @@
                                         <div class="arrivals_slider_item">
                                             <div class="border_active"></div>
                                             <div
-                                                    class="product_item is_new d-flex flex-column align-items-center justify-content-center text-center">
+                                                class="product_item is_new d-flex flex-column align-items-center justify-content-center text-center">
                                                 <div
-                                                        class="product_image d-flex flex-column align-items-center justify-content-center">
+                                                    class="product_image d-flex flex-column align-items-center justify-content-center">
                                                     <img src="images/new_5.jpg" alt=""></div>
                                                 <div class="product_content">
                                                     <div class="product_price">$225</div>
@@ -943,14 +832,6 @@
                                                         </div>
                                                     </div>
                                                     <div class="product_extras">
-                                                        <div class="product_color">
-                                                            <input type="radio" checked name="product_color"
-                                                                   style="background:#b19c83">
-                                                            <input type="radio" name="product_color"
-                                                                   style="background:#000000">
-                                                            <input type="radio" name="product_color"
-                                                                   style="background:#999999">
-                                                        </div>
                                                         <button class="product_cart_button">Add to Cart</button>
                                                     </div>
                                                 </div>
@@ -966,9 +847,9 @@
                                         <div class="arrivals_slider_item">
                                             <div class="border_active"></div>
                                             <div
-                                                    class="product_item is_new d-flex flex-column align-items-center justify-content-center text-center">
+                                                class="product_item is_new d-flex flex-column align-items-center justify-content-center text-center">
                                                 <div
-                                                        class="product_image d-flex flex-column align-items-center justify-content-center">
+                                                    class="product_image d-flex flex-column align-items-center justify-content-center">
                                                     <img src="images/new_6.jpg" alt=""></div>
                                                 <div class="product_content">
                                                     <div class="product_price">$379</div>
@@ -977,14 +858,6 @@
                                                         </div>
                                                     </div>
                                                     <div class="product_extras">
-                                                        <div class="product_color">
-                                                            <input type="radio" checked name="product_color"
-                                                                   style="background:#b19c83">
-                                                            <input type="radio" name="product_color"
-                                                                   style="background:#000000">
-                                                            <input type="radio" name="product_color"
-                                                                   style="background:#999999">
-                                                        </div>
                                                         <button class="product_cart_button">Add to Cart</button>
                                                     </div>
                                                 </div>
@@ -1000,9 +873,9 @@
                                         <div class="arrivals_slider_item">
                                             <div class="border_active"></div>
                                             <div
-                                                    class="product_item is_new d-flex flex-column align-items-center justify-content-center text-center">
+                                                class="product_item is_new d-flex flex-column align-items-center justify-content-center text-center">
                                                 <div
-                                                        class="product_image d-flex flex-column align-items-center justify-content-center">
+                                                    class="product_image d-flex flex-column align-items-center justify-content-center">
                                                     <img src="images/new_7.jpg" alt=""></div>
                                                 <div class="product_content">
                                                     <div class="product_price">$379</div>
@@ -1011,14 +884,6 @@
                                                         </div>
                                                     </div>
                                                     <div class="product_extras">
-                                                        <div class="product_color">
-                                                            <input type="radio" checked name="product_color"
-                                                                   style="background:#b19c83">
-                                                            <input type="radio" name="product_color"
-                                                                   style="background:#000000">
-                                                            <input type="radio" name="product_color"
-                                                                   style="background:#999999">
-                                                        </div>
                                                         <button class="product_cart_button">Add to Cart</button>
                                                     </div>
                                                 </div>
@@ -1034,9 +899,9 @@
                                         <div class="arrivals_slider_item">
                                             <div class="border_active"></div>
                                             <div
-                                                    class="product_item is_new d-flex flex-column align-items-center justify-content-center text-center">
+                                                class="product_item is_new d-flex flex-column align-items-center justify-content-center text-center">
                                                 <div
-                                                        class="product_image d-flex flex-column align-items-center justify-content-center">
+                                                    class="product_image d-flex flex-column align-items-center justify-content-center">
                                                     <img src="images/new_8.jpg" alt=""></div>
                                                 <div class="product_content">
                                                     <div class="product_price">$225</div>
@@ -1075,9 +940,9 @@
                                         <div class="arrivals_slider_item">
                                             <div class="border_active"></div>
                                             <div
-                                                    class="product_item is_new d-flex flex-column align-items-center justify-content-center text-center">
+                                                class="product_item is_new d-flex flex-column align-items-center justify-content-center text-center">
                                                 <div
-                                                        class="product_image d-flex flex-column align-items-center justify-content-center">
+                                                    class="product_image d-flex flex-column align-items-center justify-content-center">
                                                     <img src="images/new_1.jpg" alt=""></div>
                                                 <div class="product_content">
                                                     <div class="product_price">$225</div>
@@ -1109,9 +974,9 @@
                                         <div class="arrivals_slider_item">
                                             <div class="border_active"></div>
                                             <div
-                                                    class="product_item is_new d-flex flex-column align-items-center justify-content-center text-center">
+                                                class="product_item is_new d-flex flex-column align-items-center justify-content-center text-center">
                                                 <div
-                                                        class="product_image d-flex flex-column align-items-center justify-content-center">
+                                                    class="product_image d-flex flex-column align-items-center justify-content-center">
                                                     <img src="images/new_2.jpg" alt=""></div>
                                                 <div class="product_content">
                                                     <div class="product_price">$379</div>
@@ -1144,9 +1009,9 @@
                                         <div class="arrivals_slider_item">
                                             <div class="border_active"></div>
                                             <div
-                                                    class="product_item is_new d-flex flex-column align-items-center justify-content-center text-center">
+                                                class="product_item is_new d-flex flex-column align-items-center justify-content-center text-center">
                                                 <div
-                                                        class="product_image d-flex flex-column align-items-center justify-content-center">
+                                                    class="product_image d-flex flex-column align-items-center justify-content-center">
                                                     <img src="images/new_3.jpg" alt=""></div>
                                                 <div class="product_content">
                                                     <div class="product_price">$379</div>
@@ -1178,9 +1043,9 @@
                                         <div class="arrivals_slider_item">
                                             <div class="border_active"></div>
                                             <div
-                                                    class="product_item is_new d-flex flex-column align-items-center justify-content-center text-center">
+                                                class="product_item is_new d-flex flex-column align-items-center justify-content-center text-center">
                                                 <div
-                                                        class="product_image d-flex flex-column align-items-center justify-content-center">
+                                                    class="product_image d-flex flex-column align-items-center justify-content-center">
                                                     <img src="images/new_4.jpg" alt=""></div>
                                                 <div class="product_content">
                                                     <div class="product_price">$225</div>
@@ -1212,9 +1077,9 @@
                                         <div class="arrivals_slider_item">
                                             <div class="border_active"></div>
                                             <div
-                                                    class="product_item is_new d-flex flex-column align-items-center justify-content-center text-center">
+                                                class="product_item is_new d-flex flex-column align-items-center justify-content-center text-center">
                                                 <div
-                                                        class="product_image d-flex flex-column align-items-center justify-content-center">
+                                                    class="product_image d-flex flex-column align-items-center justify-content-center">
                                                     <img src="images/new_5.jpg" alt=""></div>
                                                 <div class="product_content">
                                                     <div class="product_price">$225</div>
@@ -1246,9 +1111,9 @@
                                         <div class="arrivals_slider_item">
                                             <div class="border_active"></div>
                                             <div
-                                                    class="product_item is_new d-flex flex-column align-items-center justify-content-center text-center">
+                                                class="product_item is_new d-flex flex-column align-items-center justify-content-center text-center">
                                                 <div
-                                                        class="product_image d-flex flex-column align-items-center justify-content-center">
+                                                    class="product_image d-flex flex-column align-items-center justify-content-center">
                                                     <img src="images/new_6.jpg" alt=""></div>
                                                 <div class="product_content">
                                                     <div class="product_price">$379</div>
@@ -1280,9 +1145,9 @@
                                         <div class="arrivals_slider_item">
                                             <div class="border_active"></div>
                                             <div
-                                                    class="product_item is_new d-flex flex-column align-items-center justify-content-center text-center">
+                                                class="product_item is_new d-flex flex-column align-items-center justify-content-center text-center">
                                                 <div
-                                                        class="product_image d-flex flex-column align-items-center justify-content-center">
+                                                    class="product_image d-flex flex-column align-items-center justify-content-center">
                                                     <img src="images/new_7.jpg" alt=""></div>
                                                 <div class="product_content">
                                                     <div class="product_price">$379</div>
@@ -1314,9 +1179,9 @@
                                         <div class="arrivals_slider_item">
                                             <div class="border_active"></div>
                                             <div
-                                                    class="product_item is_new d-flex flex-column align-items-center justify-content-center text-center">
+                                                class="product_item is_new d-flex flex-column align-items-center justify-content-center text-center">
                                                 <div
-                                                        class="product_image d-flex flex-column align-items-center justify-content-center">
+                                                    class="product_image d-flex flex-column align-items-center justify-content-center">
                                                     <img src="images/new_8.jpg" alt=""></div>
                                                 <div class="product_content">
                                                     <div class="product_price">$225</div>
@@ -1348,9 +1213,9 @@
                                         <div class="arrivals_slider_item">
                                             <div class="border_active"></div>
                                             <div
-                                                    class="product_item is_new d-flex flex-column align-items-center justify-content-center text-center">
+                                                class="product_item is_new d-flex flex-column align-items-center justify-content-center text-center">
                                                 <div
-                                                        class="product_image d-flex flex-column align-items-center justify-content-center">
+                                                    class="product_image d-flex flex-column align-items-center justify-content-center">
                                                     <img src="images/new_1.jpg" alt=""></div>
                                                 <div class="product_content">
                                                     <div class="product_price">$225</div>
@@ -1382,9 +1247,9 @@
                                         <div class="arrivals_slider_item">
                                             <div class="border_active"></div>
                                             <div
-                                                    class="product_item is_new d-flex flex-column align-items-center justify-content-center text-center">
+                                                class="product_item is_new d-flex flex-column align-items-center justify-content-center text-center">
                                                 <div
-                                                        class="product_image d-flex flex-column align-items-center justify-content-center">
+                                                    class="product_image d-flex flex-column align-items-center justify-content-center">
                                                     <img src="images/new_2.jpg" alt=""></div>
                                                 <div class="product_content">
                                                     <div class="product_price">$379</div>
@@ -1416,9 +1281,9 @@
                                         <div class="arrivals_slider_item">
                                             <div class="border_active"></div>
                                             <div
-                                                    class="product_item is_new d-flex flex-column align-items-center justify-content-center text-center">
+                                                class="product_item is_new d-flex flex-column align-items-center justify-content-center text-center">
                                                 <div
-                                                        class="product_image d-flex flex-column align-items-center justify-content-center">
+                                                    class="product_image d-flex flex-column align-items-center justify-content-center">
                                                     <img src="images/new_3.jpg" alt=""></div>
                                                 <div class="product_content">
                                                     <div class="product_price">$379</div>
@@ -1450,9 +1315,9 @@
                                         <div class="arrivals_slider_item">
                                             <div class="border_active"></div>
                                             <div
-                                                    class="product_item is_new d-flex flex-column align-items-center justify-content-center text-center">
+                                                class="product_item is_new d-flex flex-column align-items-center justify-content-center text-center">
                                                 <div
-                                                        class="product_image d-flex flex-column align-items-center justify-content-center">
+                                                    class="product_image d-flex flex-column align-items-center justify-content-center">
                                                     <img src="images/new_4.jpg" alt=""></div>
                                                 <div class="product_content">
                                                     <div class="product_price">$225</div>
@@ -1484,9 +1349,9 @@
                                         <div class="arrivals_slider_item">
                                             <div class="border_active"></div>
                                             <div
-                                                    class="product_item is_new d-flex flex-column align-items-center justify-content-center text-center">
+                                                class="product_item is_new d-flex flex-column align-items-center justify-content-center text-center">
                                                 <div
-                                                        class="product_image d-flex flex-column align-items-center justify-content-center">
+                                                    class="product_image d-flex flex-column align-items-center justify-content-center">
                                                     <img src="images/new_5.jpg" alt=""></div>
                                                 <div class="product_content">
                                                     <div class="product_price">$225</div>
@@ -1518,9 +1383,9 @@
                                         <div class="arrivals_slider_item">
                                             <div class="border_active"></div>
                                             <div
-                                                    class="product_item is_new d-flex flex-column align-items-center justify-content-center text-center">
+                                                class="product_item is_new d-flex flex-column align-items-center justify-content-center text-center">
                                                 <div
-                                                        class="product_image d-flex flex-column align-items-center justify-content-center">
+                                                    class="product_image d-flex flex-column align-items-center justify-content-center">
                                                     <img src="images/new_6.jpg" alt=""></div>
                                                 <div class="product_content">
                                                     <div class="product_price">$379</div>
@@ -1552,9 +1417,9 @@
                                         <div class="arrivals_slider_item">
                                             <div class="border_active"></div>
                                             <div
-                                                    class="product_item is_new d-flex flex-column align-items-center justify-content-center text-center">
+                                                class="product_item is_new d-flex flex-column align-items-center justify-content-center text-center">
                                                 <div
-                                                        class="product_image d-flex flex-column align-items-center justify-content-center">
+                                                    class="product_image d-flex flex-column align-items-center justify-content-center">
                                                     <img src="images/new_7.jpg" alt=""></div>
                                                 <div class="product_content">
                                                     <div class="product_price">$379</div>
@@ -1586,9 +1451,9 @@
                                         <div class="arrivals_slider_item">
                                             <div class="border_active"></div>
                                             <div
-                                                    class="product_item is_new d-flex flex-column align-items-center justify-content-center text-center">
+                                                class="product_item is_new d-flex flex-column align-items-center justify-content-center text-center">
                                                 <div
-                                                        class="product_image d-flex flex-column align-items-center justify-content-center">
+                                                    class="product_image d-flex flex-column align-items-center justify-content-center">
                                                     <img src="images/new_8.jpg" alt=""></div>
                                                 <div class="product_content">
                                                     <div class="product_price">$225</div>
@@ -1627,9 +1492,9 @@
                                         <div class="arrivals_slider_item">
                                             <div class="border_active"></div>
                                             <div
-                                                    class="product_item is_new d-flex flex-column align-items-center justify-content-center text-center">
+                                                class="product_item is_new d-flex flex-column align-items-center justify-content-center text-center">
                                                 <div
-                                                        class="product_image d-flex flex-column align-items-center justify-content-center">
+                                                    class="product_image d-flex flex-column align-items-center justify-content-center">
                                                     <img src="images/new_1.jpg" alt=""></div>
                                                 <div class="product_content">
                                                     <div class="product_price">$225</div>
@@ -1661,9 +1526,9 @@
                                         <div class="arrivals_slider_item">
                                             <div class="border_active"></div>
                                             <div
-                                                    class="product_item is_new d-flex flex-column align-items-center justify-content-center text-center">
+                                                class="product_item is_new d-flex flex-column align-items-center justify-content-center text-center">
                                                 <div
-                                                        class="product_image d-flex flex-column align-items-center justify-content-center">
+                                                    class="product_image d-flex flex-column align-items-center justify-content-center">
                                                     <img src="images/new_2.jpg" alt=""></div>
                                                 <div class="product_content">
                                                     <div class="product_price">$379</div>
@@ -1696,9 +1561,9 @@
                                         <div class="arrivals_slider_item">
                                             <div class="border_active"></div>
                                             <div
-                                                    class="product_item is_new d-flex flex-column align-items-center justify-content-center text-center">
+                                                class="product_item is_new d-flex flex-column align-items-center justify-content-center text-center">
                                                 <div
-                                                        class="product_image d-flex flex-column align-items-center justify-content-center">
+                                                    class="product_image d-flex flex-column align-items-center justify-content-center">
                                                     <img src="images/new_3.jpg" alt=""></div>
                                                 <div class="product_content">
                                                     <div class="product_price">$379</div>
@@ -1730,9 +1595,9 @@
                                         <div class="arrivals_slider_item">
                                             <div class="border_active"></div>
                                             <div
-                                                    class="product_item is_new d-flex flex-column align-items-center justify-content-center text-center">
+                                                class="product_item is_new d-flex flex-column align-items-center justify-content-center text-center">
                                                 <div
-                                                        class="product_image d-flex flex-column align-items-center justify-content-center">
+                                                    class="product_image d-flex flex-column align-items-center justify-content-center">
                                                     <img src="images/new_4.jpg" alt=""></div>
                                                 <div class="product_content">
                                                     <div class="product_price">$225</div>
@@ -1764,9 +1629,9 @@
                                         <div class="arrivals_slider_item">
                                             <div class="border_active"></div>
                                             <div
-                                                    class="product_item is_new d-flex flex-column align-items-center justify-content-center text-center">
+                                                class="product_item is_new d-flex flex-column align-items-center justify-content-center text-center">
                                                 <div
-                                                        class="product_image d-flex flex-column align-items-center justify-content-center">
+                                                    class="product_image d-flex flex-column align-items-center justify-content-center">
                                                     <img src="images/new_5.jpg" alt=""></div>
                                                 <div class="product_content">
                                                     <div class="product_price">$225</div>
@@ -1798,9 +1663,9 @@
                                         <div class="arrivals_slider_item">
                                             <div class="border_active"></div>
                                             <div
-                                                    class="product_item is_new d-flex flex-column align-items-center justify-content-center text-center">
+                                                class="product_item is_new d-flex flex-column align-items-center justify-content-center text-center">
                                                 <div
-                                                        class="product_image d-flex flex-column align-items-center justify-content-center">
+                                                    class="product_image d-flex flex-column align-items-center justify-content-center">
                                                     <img src="images/new_6.jpg" alt=""></div>
                                                 <div class="product_content">
                                                     <div class="product_price">$379</div>
@@ -1832,9 +1697,9 @@
                                         <div class="arrivals_slider_item">
                                             <div class="border_active"></div>
                                             <div
-                                                    class="product_item is_new d-flex flex-column align-items-center justify-content-center text-center">
+                                                class="product_item is_new d-flex flex-column align-items-center justify-content-center text-center">
                                                 <div
-                                                        class="product_image d-flex flex-column align-items-center justify-content-center">
+                                                    class="product_image d-flex flex-column align-items-center justify-content-center">
                                                     <img src="images/new_7.jpg" alt=""></div>
                                                 <div class="product_content">
                                                     <div class="product_price">$379</div>
@@ -1866,9 +1731,9 @@
                                         <div class="arrivals_slider_item">
                                             <div class="border_active"></div>
                                             <div
-                                                    class="product_item is_new d-flex flex-column align-items-center justify-content-center text-center">
+                                                class="product_item is_new d-flex flex-column align-items-center justify-content-center text-center">
                                                 <div
-                                                        class="product_image d-flex flex-column align-items-center justify-content-center">
+                                                    class="product_image d-flex flex-column align-items-center justify-content-center">
                                                     <img src="images/new_8.jpg" alt=""></div>
                                                 <div class="product_content">
                                                     <div class="product_price">$225</div>
@@ -1900,9 +1765,9 @@
                                         <div class="arrivals_slider_item">
                                             <div class="border_active"></div>
                                             <div
-                                                    class="product_item is_new d-flex flex-column align-items-center justify-content-center text-center">
+                                                class="product_item is_new d-flex flex-column align-items-center justify-content-center text-center">
                                                 <div
-                                                        class="product_image d-flex flex-column align-items-center justify-content-center">
+                                                    class="product_image d-flex flex-column align-items-center justify-content-center">
                                                     <img src="images/new_1.jpg" alt=""></div>
                                                 <div class="product_content">
                                                     <div class="product_price">$225</div>
@@ -1934,9 +1799,9 @@
                                         <div class="arrivals_slider_item">
                                             <div class="border_active"></div>
                                             <div
-                                                    class="product_item is_new d-flex flex-column align-items-center justify-content-center text-center">
+                                                class="product_item is_new d-flex flex-column align-items-center justify-content-center text-center">
                                                 <div
-                                                        class="product_image d-flex flex-column align-items-center justify-content-center">
+                                                    class="product_image d-flex flex-column align-items-center justify-content-center">
                                                     <img src="images/new_2.jpg" alt=""></div>
                                                 <div class="product_content">
                                                     <div class="product_price">$379</div>
@@ -1968,9 +1833,9 @@
                                         <div class="arrivals_slider_item">
                                             <div class="border_active"></div>
                                             <div
-                                                    class="product_item is_new d-flex flex-column align-items-center justify-content-center text-center">
+                                                class="product_item is_new d-flex flex-column align-items-center justify-content-center text-center">
                                                 <div
-                                                        class="product_image d-flex flex-column align-items-center justify-content-center">
+                                                    class="product_image d-flex flex-column align-items-center justify-content-center">
                                                     <img src="images/new_3.jpg" alt=""></div>
                                                 <div class="product_content">
                                                     <div class="product_price">$379</div>
@@ -2002,9 +1867,9 @@
                                         <div class="arrivals_slider_item">
                                             <div class="border_active"></div>
                                             <div
-                                                    class="product_item is_new d-flex flex-column align-items-center justify-content-center text-center">
+                                                class="product_item is_new d-flex flex-column align-items-center justify-content-center text-center">
                                                 <div
-                                                        class="product_image d-flex flex-column align-items-center justify-content-center">
+                                                    class="product_image d-flex flex-column align-items-center justify-content-center">
                                                     <img src="images/new_4.jpg" alt=""></div>
                                                 <div class="product_content">
                                                     <div class="product_price">$225</div>
@@ -2036,9 +1901,9 @@
                                         <div class="arrivals_slider_item">
                                             <div class="border_active"></div>
                                             <div
-                                                    class="product_item is_new d-flex flex-column align-items-center justify-content-center text-center">
+                                                class="product_item is_new d-flex flex-column align-items-center justify-content-center text-center">
                                                 <div
-                                                        class="product_image d-flex flex-column align-items-center justify-content-center">
+                                                    class="product_image d-flex flex-column align-items-center justify-content-center">
                                                     <img src="images/new_5.jpg" alt=""></div>
                                                 <div class="product_content">
                                                     <div class="product_price">$225</div>
@@ -2070,9 +1935,9 @@
                                         <div class="arrivals_slider_item">
                                             <div class="border_active"></div>
                                             <div
-                                                    class="product_item is_new d-flex flex-column align-items-center justify-content-center text-center">
+                                                class="product_item is_new d-flex flex-column align-items-center justify-content-center text-center">
                                                 <div
-                                                        class="product_image d-flex flex-column align-items-center justify-content-center">
+                                                    class="product_image d-flex flex-column align-items-center justify-content-center">
                                                     <img src="images/new_6.jpg" alt=""></div>
                                                 <div class="product_content">
                                                     <div class="product_price">$379</div>
@@ -2104,9 +1969,9 @@
                                         <div class="arrivals_slider_item">
                                             <div class="border_active"></div>
                                             <div
-                                                    class="product_item is_new d-flex flex-column align-items-center justify-content-center text-center">
+                                                class="product_item is_new d-flex flex-column align-items-center justify-content-center text-center">
                                                 <div
-                                                        class="product_image d-flex flex-column align-items-center justify-content-center">
+                                                    class="product_image d-flex flex-column align-items-center justify-content-center">
                                                     <img src="images/new_7.jpg" alt=""></div>
                                                 <div class="product_content">
                                                     <div class="product_price">$379</div>
@@ -2138,9 +2003,9 @@
                                         <div class="arrivals_slider_item">
                                             <div class="border_active"></div>
                                             <div
-                                                    class="product_item is_new d-flex flex-column align-items-center justify-content-center text-center">
+                                                class="product_item is_new d-flex flex-column align-items-center justify-content-center text-center">
                                                 <div
-                                                        class="product_image d-flex flex-column align-items-center justify-content-center">
+                                                    class="product_image d-flex flex-column align-items-center justify-content-center">
                                                     <img src="images/new_8.jpg" alt=""></div>
                                                 <div class="product_content">
                                                     <div class="product_price">$225</div>
@@ -2192,7 +2057,7 @@
                                             </form>
                                         </div>
                                         <div class="arrivals_single_fav product_fav active"><i
-                                                    class="fas fa-heart"></i>
+                                                class="fas fa-heart"></i>
                                         </div>
                                         <ul class="arrivals_single_marks product_marks">
                                             <li class="arrivals_single_mark product_mark product_new">new</li>
@@ -2235,7 +2100,7 @@
                                 <!-- Best Sellers Item -->
                                 <div class="bestsellers_item discount">
                                     <div
-                                            class="bestsellers_item_container d-flex flex-row align-items-center justify-content-start">
+                                        class="bestsellers_item_container d-flex flex-row align-items-center justify-content-start">
                                         <div class="bestsellers_image"><img src="images/best_1.png" alt=""></div>
                                         <div class="bestsellers_content">
                                             <div class="bestsellers_category"><a href="#">Headphones</a></div>
@@ -2257,7 +2122,7 @@
                                 <!-- Best Sellers Item -->
                                 <div class="bestsellers_item discount">
                                     <div
-                                            class="bestsellers_item_container d-flex flex-row align-items-center justify-content-start">
+                                        class="bestsellers_item_container d-flex flex-row align-items-center justify-content-start">
                                         <div class="bestsellers_image"><img src="images/best_2.png" alt=""></div>
                                         <div class="bestsellers_content">
                                             <div class="bestsellers_category"><a href="#">Headphones</a></div>
@@ -2278,7 +2143,7 @@
                                 <!-- Best Sellers Item -->
                                 <div class="bestsellers_item">
                                     <div
-                                            class="bestsellers_item_container d-flex flex-row align-items-center justify-content-start">
+                                        class="bestsellers_item_container d-flex flex-row align-items-center justify-content-start">
                                         <div class="bestsellers_image"><img src="images/best_3.png" alt=""></div>
                                         <div class="bestsellers_content">
                                             <div class="bestsellers_category"><a href="#">Headphones</a></div>
@@ -2299,7 +2164,7 @@
                                 <!-- Best Sellers Item -->
                                 <div class="bestsellers_item">
                                     <div
-                                            class="bestsellers_item_container d-flex flex-row align-items-center justify-content-start">
+                                        class="bestsellers_item_container d-flex flex-row align-items-center justify-content-start">
                                         <div class="bestsellers_image"><img src="images/best_4.png" alt=""></div>
                                         <div class="bestsellers_content">
                                             <div class="bestsellers_category"><a href="#">Headphones</a></div>
@@ -2320,7 +2185,7 @@
                                 <!-- Best Sellers Item -->
                                 <div class="bestsellers_item discount">
                                     <div
-                                            class="bestsellers_item_container d-flex flex-row align-items-center justify-content-start">
+                                        class="bestsellers_item_container d-flex flex-row align-items-center justify-content-start">
                                         <div class="bestsellers_image"><img src="images/best_5.png" alt=""></div>
                                         <div class="bestsellers_content">
                                             <div class="bestsellers_category"><a href="#">Headphones</a></div>
@@ -2341,7 +2206,7 @@
                                 <!-- Best Sellers Item -->
                                 <div class="bestsellers_item">
                                     <div
-                                            class="bestsellers_item_container d-flex flex-row align-items-center justify-content-start">
+                                        class="bestsellers_item_container d-flex flex-row align-items-center justify-content-start">
                                         <div class="bestsellers_image"><img src="images/best_6.png" alt=""></div>
                                         <div class="bestsellers_content">
                                             <div class="bestsellers_category"><a href="#">Headphones</a></div>
@@ -2363,7 +2228,7 @@
                                 <!-- Best Sellers Item -->
                                 <div class="bestsellers_item discount">
                                     <div
-                                            class="bestsellers_item_container d-flex flex-row align-items-center justify-content-start">
+                                        class="bestsellers_item_container d-flex flex-row align-items-center justify-content-start">
                                         <div class="bestsellers_image"><img src="images/best_1.png" alt=""></div>
                                         <div class="bestsellers_content">
                                             <div class="bestsellers_category"><a href="#">Headphones</a></div>
@@ -2385,7 +2250,7 @@
                                 <!-- Best Sellers Item -->
                                 <div class="bestsellers_item discount">
                                     <div
-                                            class="bestsellers_item_container d-flex flex-row align-items-center justify-content-start">
+                                        class="bestsellers_item_container d-flex flex-row align-items-center justify-content-start">
                                         <div class="bestsellers_image"><img src="images/best_2.png" alt=""></div>
                                         <div class="bestsellers_content">
                                             <div class="bestsellers_category"><a href="#">Headphones</a></div>
@@ -2407,7 +2272,7 @@
                                 <!-- Best Sellers Item -->
                                 <div class="bestsellers_item">
                                     <div
-                                            class="bestsellers_item_container d-flex flex-row align-items-center justify-content-start">
+                                        class="bestsellers_item_container d-flex flex-row align-items-center justify-content-start">
                                         <div class="bestsellers_image"><img src="images/best_3.png" alt=""></div>
                                         <div class="bestsellers_content">
                                             <div class="bestsellers_category"><a href="#">Headphones</a></div>
@@ -2429,7 +2294,7 @@
                                 <!-- Best Sellers Item -->
                                 <div class="bestsellers_item">
                                     <div
-                                            class="bestsellers_item_container d-flex flex-row align-items-center justify-content-start">
+                                        class="bestsellers_item_container d-flex flex-row align-items-center justify-content-start">
                                         <div class="bestsellers_image"><img src="images/best_4.png" alt=""></div>
                                         <div class="bestsellers_content">
                                             <div class="bestsellers_category"><a href="#">Headphones</a></div>
@@ -2451,7 +2316,7 @@
                                 <!-- Best Sellers Item -->
                                 <div class="bestsellers_item discount">
                                     <div
-                                            class="bestsellers_item_container d-flex flex-row align-items-center justify-content-start">
+                                        class="bestsellers_item_container d-flex flex-row align-items-center justify-content-start">
                                         <div class="bestsellers_image"><img src="images/best_5.png" alt=""></div>
                                         <div class="bestsellers_content">
                                             <div class="bestsellers_category"><a href="#">Headphones</a></div>
@@ -2473,7 +2338,7 @@
                                 <!-- Best Sellers Item -->
                                 <div class="bestsellers_item">
                                     <div
-                                            class="bestsellers_item_container d-flex flex-row align-items-center justify-content-start">
+                                        class="bestsellers_item_container d-flex flex-row align-items-center justify-content-start">
                                         <div class="bestsellers_image"><img src="images/best_6.png" alt=""></div>
                                         <div class="bestsellers_content">
                                             <div class="bestsellers_category"><a href="#">Headphones</a></div>
@@ -2504,7 +2369,7 @@
                                 <!-- Best Sellers Item -->
                                 <div class="bestsellers_item discount">
                                     <div
-                                            class="bestsellers_item_container d-flex flex-row align-items-center justify-content-start">
+                                        class="bestsellers_item_container d-flex flex-row align-items-center justify-content-start">
                                         <div class="bestsellers_image"><img src="images/best_1.png" alt=""></div>
                                         <div class="bestsellers_content">
                                             <div class="bestsellers_category"><a href="#">Headphones</a></div>
@@ -2526,7 +2391,7 @@
                                 <!-- Best Sellers Item -->
                                 <div class="bestsellers_item discount">
                                     <div
-                                            class="bestsellers_item_container d-flex flex-row align-items-center justify-content-start">
+                                        class="bestsellers_item_container d-flex flex-row align-items-center justify-content-start">
                                         <div class="bestsellers_image"><img src="images/best_2.png" alt=""></div>
                                         <div class="bestsellers_content">
                                             <div class="bestsellers_category"><a href="#">Headphones</a></div>
@@ -2548,7 +2413,7 @@
                                 <!-- Best Sellers Item -->
                                 <div class="bestsellers_item">
                                     <div
-                                            class="bestsellers_item_container d-flex flex-row align-items-center justify-content-start">
+                                        class="bestsellers_item_container d-flex flex-row align-items-center justify-content-start">
                                         <div class="bestsellers_image"><img src="images/best_3.png" alt=""></div>
                                         <div class="bestsellers_content">
                                             <div class="bestsellers_category"><a href="#">Headphones</a></div>
@@ -2570,7 +2435,7 @@
                                 <!-- Best Sellers Item -->
                                 <div class="bestsellers_item">
                                     <div
-                                            class="bestsellers_item_container d-flex flex-row align-items-center justify-content-start">
+                                        class="bestsellers_item_container d-flex flex-row align-items-center justify-content-start">
                                         <div class="bestsellers_image"><img src="images/best_4.png" alt=""></div>
                                         <div class="bestsellers_content">
                                             <div class="bestsellers_category"><a href="#">Headphones</a></div>
@@ -2592,7 +2457,7 @@
                                 <!-- Best Sellers Item -->
                                 <div class="bestsellers_item discount">
                                     <div
-                                            class="bestsellers_item_container d-flex flex-row align-items-center justify-content-start">
+                                        class="bestsellers_item_container d-flex flex-row align-items-center justify-content-start">
                                         <div class="bestsellers_image"><img src="images/best_5.png" alt=""></div>
                                         <div class="bestsellers_content">
                                             <div class="bestsellers_category"><a href="#">Headphones</a></div>
@@ -2614,7 +2479,7 @@
                                 <!-- Best Sellers Item -->
                                 <div class="bestsellers_item">
                                     <div
-                                            class="bestsellers_item_container d-flex flex-row align-items-center justify-content-start">
+                                        class="bestsellers_item_container d-flex flex-row align-items-center justify-content-start">
                                         <div class="bestsellers_image"><img src="images/best_6.png" alt=""></div>
                                         <div class="bestsellers_content">
                                             <div class="bestsellers_category"><a href="#">Headphones</a></div>
@@ -2636,7 +2501,7 @@
                                 <!-- Best Sellers Item -->
                                 <div class="bestsellers_item discount">
                                     <div
-                                            class="bestsellers_item_container d-flex flex-row align-items-center justify-content-start">
+                                        class="bestsellers_item_container d-flex flex-row align-items-center justify-content-start">
                                         <div class="bestsellers_image"><img src="images/best_1.png" alt=""></div>
                                         <div class="bestsellers_content">
                                             <div class="bestsellers_category"><a href="#">Headphones</a></div>
@@ -2658,7 +2523,7 @@
                                 <!-- Best Sellers Item -->
                                 <div class="bestsellers_item discount">
                                     <div
-                                            class="bestsellers_item_container d-flex flex-row align-items-center justify-content-start">
+                                        class="bestsellers_item_container d-flex flex-row align-items-center justify-content-start">
                                         <div class="bestsellers_image"><img src="images/best_2.png" alt=""></div>
                                         <div class="bestsellers_content">
                                             <div class="bestsellers_category"><a href="#">Headphones</a></div>
@@ -2680,7 +2545,7 @@
                                 <!-- Best Sellers Item -->
                                 <div class="bestsellers_item">
                                     <div
-                                            class="bestsellers_item_container d-flex flex-row align-items-center justify-content-start">
+                                        class="bestsellers_item_container d-flex flex-row align-items-center justify-content-start">
                                         <div class="bestsellers_image"><img src="images/best_3.png" alt=""></div>
                                         <div class="bestsellers_content">
                                             <div class="bestsellers_category"><a href="#">Headphones</a></div>
@@ -2702,7 +2567,7 @@
                                 <!-- Best Sellers Item -->
                                 <div class="bestsellers_item">
                                     <div
-                                            class="bestsellers_item_container d-flex flex-row align-items-center justify-content-start">
+                                        class="bestsellers_item_container d-flex flex-row align-items-center justify-content-start">
                                         <div class="bestsellers_image"><img src="images/best_4.png" alt=""></div>
                                         <div class="bestsellers_content">
                                             <div class="bestsellers_category"><a href="#">Headphones</a></div>
@@ -2724,7 +2589,7 @@
                                 <!-- Best Sellers Item -->
                                 <div class="bestsellers_item discount">
                                     <div
-                                            class="bestsellers_item_container d-flex flex-row align-items-center justify-content-start">
+                                        class="bestsellers_item_container d-flex flex-row align-items-center justify-content-start">
                                         <div class="bestsellers_image"><img src="images/best_5.png" alt=""></div>
                                         <div class="bestsellers_content">
                                             <div class="bestsellers_category"><a href="#">Headphones</a></div>
@@ -2746,7 +2611,7 @@
                                 <!-- Best Sellers Item -->
                                 <div class="bestsellers_item">
                                     <div
-                                            class="bestsellers_item_container d-flex flex-row align-items-center justify-content-start">
+                                        class="bestsellers_item_container d-flex flex-row align-items-center justify-content-start">
                                         <div class="bestsellers_image"><img src="images/best_6.png" alt=""></div>
                                         <div class="bestsellers_content">
                                             <div class="bestsellers_category"><a href="#">Headphones</a></div>
@@ -2777,7 +2642,7 @@
                                 <!-- Best Sellers Item -->
                                 <div class="bestsellers_item discount">
                                     <div
-                                            class="bestsellers_item_container d-flex flex-row align-items-center justify-content-start">
+                                        class="bestsellers_item_container d-flex flex-row align-items-center justify-content-start">
                                         <div class="bestsellers_image"><img src="images/best_1.png" alt=""></div>
                                         <div class="bestsellers_content">
                                             <div class="bestsellers_category"><a href="#">Headphones</a></div>
@@ -2799,7 +2664,7 @@
                                 <!-- Best Sellers Item -->
                                 <div class="bestsellers_item discount">
                                     <div
-                                            class="bestsellers_item_container d-flex flex-row align-items-center justify-content-start">
+                                        class="bestsellers_item_container d-flex flex-row align-items-center justify-content-start">
                                         <div class="bestsellers_image"><img src="images/best_2.png" alt=""></div>
                                         <div class="bestsellers_content">
                                             <div class="bestsellers_category"><a href="#">Headphones</a></div>
@@ -2821,7 +2686,7 @@
                                 <!-- Best Sellers Item -->
                                 <div class="bestsellers_item">
                                     <div
-                                            class="bestsellers_item_container d-flex flex-row align-items-center justify-content-start">
+                                        class="bestsellers_item_container d-flex flex-row align-items-center justify-content-start">
                                         <div class="bestsellers_image"><img src="images/best_3.png" alt=""></div>
                                         <div class="bestsellers_content">
                                             <div class="bestsellers_category"><a href="#">Headphones</a></div>
@@ -2843,7 +2708,7 @@
                                 <!-- Best Sellers Item -->
                                 <div class="bestsellers_item">
                                     <div
-                                            class="bestsellers_item_container d-flex flex-row align-items-center justify-content-start">
+                                        class="bestsellers_item_container d-flex flex-row align-items-center justify-content-start">
                                         <div class="bestsellers_image"><img src="images/best_4.png" alt=""></div>
                                         <div class="bestsellers_content">
                                             <div class="bestsellers_category"><a href="#">Headphones</a></div>
@@ -2865,7 +2730,7 @@
                                 <!-- Best Sellers Item -->
                                 <div class="bestsellers_item discount">
                                     <div
-                                            class="bestsellers_item_container d-flex flex-row align-items-center justify-content-start">
+                                        class="bestsellers_item_container d-flex flex-row align-items-center justify-content-start">
                                         <div class="bestsellers_image"><img src="images/best_5.png" alt=""></div>
                                         <div class="bestsellers_content">
                                             <div class="bestsellers_category"><a href="#">Headphones</a></div>
@@ -2887,7 +2752,7 @@
                                 <!-- Best Sellers Item -->
                                 <div class="bestsellers_item">
                                     <div
-                                            class="bestsellers_item_container d-flex flex-row align-items-center justify-content-start">
+                                        class="bestsellers_item_container d-flex flex-row align-items-center justify-content-start">
                                         <div class="bestsellers_image"><img src="images/best_6.png" alt=""></div>
                                         <div class="bestsellers_content">
                                             <div class="bestsellers_category"><a href="#">Headphones</a></div>
@@ -2909,7 +2774,7 @@
                                 <!-- Best Sellers Item -->
                                 <div class="bestsellers_item discount">
                                     <div
-                                            class="bestsellers_item_container d-flex flex-row align-items-center justify-content-start">
+                                        class="bestsellers_item_container d-flex flex-row align-items-center justify-content-start">
                                         <div class="bestsellers_image"><img src="images/best_1.png" alt=""></div>
                                         <div class="bestsellers_content">
                                             <div class="bestsellers_category"><a href="#">Headphones</a></div>
@@ -2931,7 +2796,7 @@
                                 <!-- Best Sellers Item -->
                                 <div class="bestsellers_item discount">
                                     <div
-                                            class="bestsellers_item_container d-flex flex-row align-items-center justify-content-start">
+                                        class="bestsellers_item_container d-flex flex-row align-items-center justify-content-start">
                                         <div class="bestsellers_image"><img src="images/best_2.png" alt=""></div>
                                         <div class="bestsellers_content">
                                             <div class="bestsellers_category"><a href="#">Headphones</a></div>
@@ -2953,7 +2818,7 @@
                                 <!-- Best Sellers Item -->
                                 <div class="bestsellers_item">
                                     <div
-                                            class="bestsellers_item_container d-flex flex-row align-items-center justify-content-start">
+                                        class="bestsellers_item_container d-flex flex-row align-items-center justify-content-start">
                                         <div class="bestsellers_image"><img src="images/best_3.png" alt=""></div>
                                         <div class="bestsellers_content">
                                             <div class="bestsellers_category"><a href="#">Headphones</a></div>
@@ -2975,7 +2840,7 @@
                                 <!-- Best Sellers Item -->
                                 <div class="bestsellers_item">
                                     <div
-                                            class="bestsellers_item_container d-flex flex-row align-items-center justify-content-start">
+                                        class="bestsellers_item_container d-flex flex-row align-items-center justify-content-start">
                                         <div class="bestsellers_image"><img src="images/best_4.png" alt=""></div>
                                         <div class="bestsellers_content">
                                             <div class="bestsellers_category"><a href="#">Headphones</a></div>
@@ -2997,7 +2862,7 @@
                                 <!-- Best Sellers Item -->
                                 <div class="bestsellers_item discount">
                                     <div
-                                            class="bestsellers_item_container d-flex flex-row align-items-center justify-content-start">
+                                        class="bestsellers_item_container d-flex flex-row align-items-center justify-content-start">
                                         <div class="bestsellers_image"><img src="images/best_5.png" alt=""></div>
                                         <div class="bestsellers_content">
                                             <div class="bestsellers_category"><a href="#">Headphones</a></div>
@@ -3019,7 +2884,7 @@
                                 <!-- Best Sellers Item -->
                                 <div class="bestsellers_item">
                                     <div
-                                            class="bestsellers_item_container d-flex flex-row align-items-center justify-content-start">
+                                        class="bestsellers_item_container d-flex flex-row align-items-center justify-content-start">
                                         <div class="bestsellers_image"><img src="images/best_6.png" alt=""></div>
                                         <div class="bestsellers_content">
                                             <div class="bestsellers_category"><a href="#">Headphones</a></div>
@@ -3137,7 +3002,7 @@
                             <div class="owl-item">
                                 <div class="trends_item is_new">
                                     <div
-                                            class="trends_image d-flex flex-column align-items-center justify-content-center">
+                                        class="trends_image d-flex flex-column align-items-center justify-content-center">
                                         <img src="images/trends_1.jpg" alt=""></div>
                                     <div class="trends_content">
                                         <div class="trends_category"><a href="#">Smartphones</a></div>
@@ -3159,7 +3024,7 @@
                             <div class="owl-item">
                                 <div class="trends_item">
                                     <div
-                                            class="trends_image d-flex flex-column align-items-center justify-content-center">
+                                        class="trends_image d-flex flex-column align-items-center justify-content-center">
                                         <img src="images/trends_2.jpg" alt=""></div>
                                     <div class="trends_content">
                                         <div class="trends_category"><a href="#">Smartphones</a></div>
@@ -3182,7 +3047,7 @@
                             <div class="owl-item">
                                 <div class="trends_item is_new">
                                     <div
-                                            class="trends_image d-flex flex-column align-items-center justify-content-center">
+                                        class="trends_image d-flex flex-column align-items-center justify-content-center">
                                         <img src="images/trends_3.jpg" alt=""></div>
                                     <div class="trends_content">
                                         <div class="trends_category"><a href="#">Smartphones</a></div>
@@ -3205,7 +3070,7 @@
                             <div class="owl-item">
                                 <div class="trends_item is_new">
                                     <div
-                                            class="trends_image d-flex flex-column align-items-center justify-content-center">
+                                        class="trends_image d-flex flex-column align-items-center justify-content-center">
                                         <img src="images/trends_1.jpg" alt=""></div>
                                     <div class="trends_content">
                                         <div class="trends_category"><a href="#">Smartphones</a></div>
@@ -3227,7 +3092,7 @@
                             <div class="owl-item">
                                 <div class="trends_item">
                                     <div
-                                            class="trends_image d-flex flex-column align-items-center justify-content-center">
+                                        class="trends_image d-flex flex-column align-items-center justify-content-center">
                                         <img src="images/trends_2.jpg" alt=""></div>
                                     <div class="trends_content">
                                         <div class="trends_category"><a href="#">Smartphones</a></div>
@@ -3249,7 +3114,7 @@
                             <div class="owl-item">
                                 <div class="trends_item is_new">
                                     <div
-                                            class="trends_image d-flex flex-column align-items-center justify-content-center">
+                                        class="trends_image d-flex flex-column align-items-center justify-content-center">
                                         <img src="images/trends_3.jpg" alt=""></div>
                                     <div class="trends_content">
                                         <div class="trends_category"><a href="#">Smartphones</a></div>
@@ -3443,7 +3308,7 @@
                             <!-- Recently Viewed Item -->
                             <div class="owl-item">
                                 <div
-                                        class="viewed_item discount d-flex flex-column align-items-center justify-content-center text-center">
+                                    class="viewed_item discount d-flex flex-column align-items-center justify-content-center text-center">
                                     <div class="viewed_image"><img src="images/view_1.jpg" alt=""></div>
                                     <div class="viewed_content text-center">
                                         <div class="viewed_price">$225<span>$300</span></div>
@@ -3459,7 +3324,7 @@
                             <!-- Recently Viewed Item -->
                             <div class="owl-item">
                                 <div
-                                        class="viewed_item d-flex flex-column align-items-center justify-content-center text-center">
+                                    class="viewed_item d-flex flex-column align-items-center justify-content-center text-center">
                                     <div class="viewed_image"><img src="images/view_2.jpg" alt=""></div>
                                     <div class="viewed_content text-center">
                                         <div class="viewed_price">$379</div>
@@ -3475,7 +3340,7 @@
                             <!-- Recently Viewed Item -->
                             <div class="owl-item">
                                 <div
-                                        class="viewed_item d-flex flex-column align-items-center justify-content-center text-center">
+                                    class="viewed_item d-flex flex-column align-items-center justify-content-center text-center">
                                     <div class="viewed_image"><img src="images/view_3.jpg" alt=""></div>
                                     <div class="viewed_content text-center">
                                         <div class="viewed_price">$225</div>
@@ -3491,7 +3356,7 @@
                             <!-- Recently Viewed Item -->
                             <div class="owl-item">
                                 <div
-                                        class="viewed_item is_new d-flex flex-column align-items-center justify-content-center text-center">
+                                    class="viewed_item is_new d-flex flex-column align-items-center justify-content-center text-center">
                                     <div class="viewed_image"><img src="images/view_4.jpg" alt=""></div>
                                     <div class="viewed_content text-center">
                                         <div class="viewed_price">$379</div>
@@ -3507,7 +3372,7 @@
                             <!-- Recently Viewed Item -->
                             <div class="owl-item">
                                 <div
-                                        class="viewed_item discount d-flex flex-column align-items-center justify-content-center text-center">
+                                    class="viewed_item discount d-flex flex-column align-items-center justify-content-center text-center">
                                     <div class="viewed_image"><img src="images/view_5.jpg" alt=""></div>
                                     <div class="viewed_content text-center">
                                         <div class="viewed_price">$225<span>$300</span></div>
@@ -3523,7 +3388,7 @@
                             <!-- Recently Viewed Item -->
                             <div class="owl-item">
                                 <div
-                                        class="viewed_item d-flex flex-column align-items-center justify-content-center text-center">
+                                    class="viewed_item d-flex flex-column align-items-center justify-content-center text-center">
                                     <div class="viewed_image"><img src="images/view_6.jpg" alt=""></div>
                                     <div class="viewed_content text-center">
                                         <div class="viewed_price">$375</div>
@@ -3556,35 +3421,35 @@
 
                             <div class="owl-item">
                                 <div class="brands_item d-flex flex-column justify-content-center"><img
-                                            src="images/brands_1.jpg" alt=""></div>
+                                        src="images/brands_1.jpg" alt=""></div>
                             </div>
                             <div class="owl-item">
                                 <div class="brands_item d-flex flex-column justify-content-center"><img
-                                            src="images/brands_2.jpg" alt=""></div>
+                                        src="images/brands_2.jpg" alt=""></div>
                             </div>
                             <div class="owl-item">
                                 <div class="brands_item d-flex flex-column justify-content-center"><img
-                                            src="images/brands_3.jpg" alt=""></div>
+                                        src="images/brands_3.jpg" alt=""></div>
                             </div>
                             <div class="owl-item">
                                 <div class="brands_item d-flex flex-column justify-content-center"><img
-                                            src="images/brands_4.jpg" alt=""></div>
+                                        src="images/brands_4.jpg" alt=""></div>
                             </div>
                             <div class="owl-item">
                                 <div class="brands_item d-flex flex-column justify-content-center"><img
-                                            src="images/brands_5.jpg" alt=""></div>
+                                        src="images/brands_5.jpg" alt=""></div>
                             </div>
                             <div class="owl-item">
                                 <div class="brands_item d-flex flex-column justify-content-center"><img
-                                            src="images/brands_6.jpg" alt=""></div>
+                                        src="images/brands_6.jpg" alt=""></div>
                             </div>
                             <div class="owl-item">
                                 <div class="brands_item d-flex flex-column justify-content-center"><img
-                                            src="images/brands_7.jpg" alt=""></div>
+                                        src="images/brands_7.jpg" alt=""></div>
                             </div>
                             <div class="owl-item">
                                 <div class="brands_item d-flex flex-column justify-content-center"><img
-                                            src="images/brands_8.jpg" alt=""></div>
+                                        src="images/brands_8.jpg" alt=""></div>
                             </div>
 
                         </div>

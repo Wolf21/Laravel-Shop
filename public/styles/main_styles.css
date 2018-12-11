@@ -1677,24 +1677,23 @@ select option
 }
 .product_price
 {
-	font-size: 16px;
+	font-size: 15px;
 	font-weight: 500;
-	margin-top: 25px;
 }
 .product_price.discount
 {
 	color: #df3b3b;
 }
-.product_price span
+.product_old
 {
 	font-size: 12px;
 	font-weight: 400;
 	color: rgba(0,0,0,0.6);
-	margin-left: 10px;
+    text-decoration: line-through;
 }
 .product_name
 {
-	margin-top: 4px;
+	margin-top: 30px;
 	overflow: hidden;
 }
 .product_name div

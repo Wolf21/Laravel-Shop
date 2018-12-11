@@ -22,6 +22,7 @@ class CreateNewsTable extends Migration
             $table->text('images');
             $table->integer('status');
             $table->text('source');
+            $table->text('tag');
             $table->integer('cat_id')->unsigned();
             $table->foreign('cat_id')->references('id')->on('categories')->onDelete('cascade');
             $table->integer('user_id')->unsigned();
