@@ -15,7 +15,6 @@ class Controller extends BaseController
     public static function index()
     {
         $products = Products::all();
-        dd($products);
         return view('index')->with('products', $products);
     }
 }

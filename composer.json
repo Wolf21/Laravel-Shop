@@ -17,7 +17,11 @@
         "mockery/mockery": "^1.0",
         "nunomaduro/collision": "^2.0",
         "phpunit/phpunit": "^7.0",
-        "orangehill/iseed": "dev-master"
+        "orangehill/iseed": "dev-master",
+        "infyomlabs/laravel-generator": "5.7.x-dev",
+        "laravelcollective/html": "^5.7.0",
+        "infyomlabs/adminlte-templates": "5.7.x-dev",
+        "doctrine/dbal": "~2.3"
     },
     "autoload": {
         "classmap": [
