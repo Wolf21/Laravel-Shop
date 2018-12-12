@@ -13,10 +13,10 @@ class CreateOrdersTable extends Migration
     public function up()
     {
         Schema::create('orders', function (Blueprint $table) {
-            $table->increments('id');
-            $table->integer('c_id')->unsigned();
-            $table->foreign('c_id')->references('id')->on('users')->onDelete('cascade');
-            $table->integer('qty');
+            $table->increments('order_id');
+            $table->integer('user_id')->unsigned();
+            $table->foreign('user_id')->references('uid')->on('users')->onDelete('cascade');
+            $table->integer('quantity');
             $table->decimal('sub_total', 13, 2);
             $table->decimal('total', 13, 2);
             $table->integer('status');

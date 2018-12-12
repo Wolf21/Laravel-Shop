@@ -14,12 +14,13 @@ class CreateProductDetailsTable extends Migration
     {
         Schema::create('product_details', function (Blueprint $table) {
             $table->increments('id');
+            $table->integer('quantity')->default(100);
             $table->string('cpu');
             $table->string('ram');
             $table->string('screen');
             $table->string('vga');
             $table->string('storage');
-            $table->string('exten_memmory');
+            $table->string('extend_memory');
             $table->string('cam1');
             $table->string('cam2');
             $table->string('sim');
@@ -27,8 +28,8 @@ class CreateProductDetailsTable extends Migration
             $table->string('pin');            
             $table->string('os');            
             $table->text('note');            
-            $table->integer('pro_id')->unsigned();
-            $table->foreign('pro_id')->references('id')->on('products')->onDelete('cascade');;     
+            $table->integer('product_id')->unsigned();
+            $table->foreign('product_id')->references('product_id')->on('products')->onDelete('cascade');;
             $table->timestamps();
         });
     }

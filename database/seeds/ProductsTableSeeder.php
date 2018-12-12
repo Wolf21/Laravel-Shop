@@ -12,25 +12,24 @@ class ProductsTableSeeder extends Seeder
      */
     public function run()
     {
-        
+
 
         \DB::table('products')->delete();
-        
-        \DB::table('products')->insert(array (
-            0 => 
-            array (
-                'id' => 22,
-                'name' => 'Galaxy S7 EDGE',
-                'slug' => 'galaxy-s7-edge',
-            'intro' => 'Exynos 8890, 5.1 inch (1440 x 2560 pixels), Android 6.0 (Marshmallow)',
-                'promo1' => 'Trả góp 0%',
-                'promo2' => 'Hoặc Tặng Vali Lock & Lock ',
-            'promo3' => 'Hoặc Tặng Combo Quà (Bao da S-View + Tai nghe Level Active)',
-                'packet' => ' Hộp, Sạc, Tai nghe, Sách hướng dẫn, Cáp OTG, Cáp, Cây lấy sim ',
-                'images' => '1480005553_635918156798139185_s7-g2.jpg',
-            'r_intro' => '<p>Ch&iacute;nh thức ra mắt tại sự kiện MWC 2016 tổ chức tại Barcelona (T&acirc;y Ban Nha), smartphone Samsung Galaxy S7 sở hữu nhiều sự thay đổi nổi bật ở cả thiết kế, cấu h&igrave;nh v&agrave; những t&iacute;nh năng đi k&egrave;m. Chiếc điện thoại n&agrave;y hứa hẹn sẽ tạo n&ecirc;n sự b&ugrave;ng nổ trong ph&acirc;n kh&uacute;c cao cấp v&agrave; mang lại những th&agrave;nh c&ocirc;ng tiếp theo cho h&atilde;ng điện thoại H&agrave;n Quốc.</p>
+
+        \DB::table('products')->insert(array(
+            0 =>
+                array(
+                    'product_id' => 22,
+                    'name' => 'Galaxy S7 EDGE',
+                    'slug' => 'galaxy-s7-edge',
+                    'intro' => 'Exynos 8890, 5.1 inch (1440 x 2560 pixels), Android 6.0 (Marshmallow)',
+                    'promotion' => 'Trả góp 0%, Tặng Vali Lock & Lock, Tặng Combo Quà (Bao da S-View + Tai nghe Level Active)',
+                    'sale' => 20,
+                    'packet' => ' Hộp, Sạc, Tai nghe, Sách hướng dẫn, Cáp OTG, Cáp, Cây lấy sim ',
+                    'images' => '1480005553_635918156798139185_s7-g2.jpg',
+                    'r_intro' => '<p>Ch&iacute;nh thức ra mắt tại sự kiện MWC 2016 tổ chức tại Barcelona (T&acirc;y Ban Nha), smartphone Samsung Galaxy S7 sở hữu nhiều sự thay đổi nổi bật ở cả thiết kế, cấu h&igrave;nh v&agrave; những t&iacute;nh năng đi k&egrave;m. Chiếc điện thoại n&agrave;y hứa hẹn sẽ tạo n&ecirc;n sự b&ugrave;ng nổ trong ph&acirc;n kh&uacute;c cao cấp v&agrave; mang lại những th&agrave;nh c&ocirc;ng tiếp theo cho h&atilde;ng điện thoại H&agrave;n Quốc.</p>
 ',
-            'review' => '<p>Ch&iacute;nh thức ra mắt tại sự kiện MWC 2016 tổ chức tại Barcelona (T&acirc;y Ban Nha), smartphone&nbsp;<a href="https://fptshop.com.vn/dien-thoai/samsung-galaxy-s7" target="_blank"><strong>Samsung Galaxy S7</strong></a>&nbsp;sở hữu nhiều sự thay đổi nổi bật ở cả thiết kế, cấu h&igrave;nh v&agrave; những t&iacute;nh năng đi k&egrave;m.&nbsp;Chiếc điện thoại n&agrave;y hứa hẹn sẽ tạo n&ecirc;n sự b&ugrave;ng nổ trong ph&acirc;n kh&uacute;c cao cấp v&agrave; mang lại những th&agrave;nh c&ocirc;ng tiếp theo cho h&atilde;ng điện thoại H&agrave;n Quốc.</p>
+                    'review' => '<p>Ch&iacute;nh thức ra mắt tại sự kiện MWC 2016 tổ chức tại Barcelona (T&acirc;y Ban Nha), smartphone&nbsp;<a href="https://fptshop.com.vn/dien-thoai/samsung-galaxy-s7" target="_blank"><strong>Samsung Galaxy S7</strong></a>&nbsp;sở hữu nhiều sự thay đổi nổi bật ở cả thiết kế, cấu h&igrave;nh v&agrave; những t&iacute;nh năng đi k&egrave;m.&nbsp;Chiếc điện thoại n&agrave;y hứa hẹn sẽ tạo n&ecirc;n sự b&ugrave;ng nổ trong ph&acirc;n kh&uacute;c cao cấp v&agrave; mang lại những th&agrave;nh c&ocirc;ng tiếp theo cho h&atilde;ng điện thoại H&agrave;n Quốc.</p>
 
 <p>&nbsp;</p>
 
@@ -96,28 +95,26 @@ class ProductsTableSeeder extends Seeder
 
 <p>Hệ điều h&agrave;nh Android 6.0 Marshmallow mới nhất hiện nay kết hợp với c&ocirc;ng nghệ m&agrave;n h&igrave;nh Super AMOLED v&agrave; vi xử l&yacute; tiết kiệm điện năng c&ograve;n gi&uacute;p m&aacute;y c&oacute; được thời lượng pin l&acirc;u hơn, c&oacute; thể l&ecirc;n đến 2 ng&agrave;y ở điều kiện sử dụng th&ocirc;ng thường. C&ocirc;ng nghệ sạc nhanh sẽ gi&uacute;p r&uacute;t ngắn đ&aacute;ng kể thời gian chờ đợi của người d&ugrave;ng, ngo&agrave;i ra Galaxy S7 c&ograve;n được trang bị t&iacute;nh năng sạc kh&ocirc;ng d&acirc;y v&agrave; đặc biệt l&agrave; tản nhiệt bằng chất lỏng.</p>
 ',
-                'tag' => 'Galaxy S7, Galaxy S7,Galaxy S7',
-                'price' => '15890000',
-                'status' => 1,
-                'cat_id' => 4,
-                'user_id' => 1,
-                'created_at' => '2016-11-24 09:39:13',
-                'updated_at' => '2016-11-28 18:02:19',
-            ),
-            1 => 
-            array (
-                'id' => 23,
-                'name' => 'Galaxy NOTE 7',
-                'slug' => 'galaxy-note-7',
-            'intro' => 'Exynos 8890, 5.1 inch (1440 x 2560 pixels), Android 6.0 (Marshmallow)',
-                'promo1' => 'Trả góp 0%',
-                'promo2' => 'Hoặc Tặng Vali Lock & Lock ',
-            'promo3' => 'Hoặc Tặng Combo Quà (Bao da S-View + Tai nghe Level Active)',
-                'packet' => ' Hộp, Sạc, Tai nghe, Sách hướng dẫn, Cáp OTG, Cáp, Cây lấy sim ',
-                'images' => '1480005568_635918156798139185_s7-g2.jpg',
-            'r_intro' => '<p>Ch&iacute;nh thức ra mắt tại sự kiện MWC 2016 tổ chức tại Barcelona (T&acirc;y Ban Nha), smartphone Samsung Galaxy S7 sở hữu nhiều sự thay đổi nổi bật ở cả thiết kế, cấu h&igrave;nh v&agrave; những t&iacute;nh năng đi k&egrave;m. Chiếc điện thoại n&agrave;y hứa hẹn sẽ tạo n&ecirc;n sự b&ugrave;ng nổ trong ph&acirc;n kh&uacute;c cao cấp v&agrave; mang lại những th&agrave;nh c&ocirc;ng tiếp theo cho h&atilde;ng điện thoại H&agrave;n Quốc.</p>
+                    'tag' => 'Galaxy S7, Galaxy S7,Galaxy S7',
+                    'price' => '15890000',
+                    'status' => 1,
+                    'cat_id' => 4,
+                    'created_at' => '2016-11-24 09:39:13',
+                    'updated_at' => '2016-11-28 18:02:19',
+                ),
+            1 =>
+                array(
+                    'product_id' => 23,
+                    'name' => 'Galaxy NOTE 7',
+                    'slug' => 'galaxy-note-7',
+                    'intro' => 'Exynos 8890, 5.1 inch (1440 x 2560 pixels), Android 6.0 (Marshmallow)',
+                    'promotion' => 'Trả góp 0%, Tặng Vali Lock & Lock, Tặng Combo Quà (Bao da S-View + Tai nghe Level Active)',
+                    'sale' => 20,
+                    'packet' => ' Hộp, Sạc, Tai nghe, Sách hướng dẫn, Cáp OTG, Cáp, Cây lấy sim ',
+                    'images' => '1480005568_635918156798139185_s7-g2.jpg',
+                    'r_intro' => '<p>Ch&iacute;nh thức ra mắt tại sự kiện MWC 2016 tổ chức tại Barcelona (T&acirc;y Ban Nha), smartphone Samsung Galaxy S7 sở hữu nhiều sự thay đổi nổi bật ở cả thiết kế, cấu h&igrave;nh v&agrave; những t&iacute;nh năng đi k&egrave;m. Chiếc điện thoại n&agrave;y hứa hẹn sẽ tạo n&ecirc;n sự b&ugrave;ng nổ trong ph&acirc;n kh&uacute;c cao cấp v&agrave; mang lại những th&agrave;nh c&ocirc;ng tiếp theo cho h&atilde;ng điện thoại H&agrave;n Quốc.</p>
 ',
-            'review' => '<p>Ch&iacute;nh thức ra mắt tại sự kiện MWC 2016 tổ chức tại Barcelona (T&acirc;y Ban Nha), smartphone&nbsp;<a href="https://fptshop.com.vn/dien-thoai/samsung-galaxy-s7" target="_blank"><strong>Samsung Galaxy S7</strong></a>&nbsp;sở hữu nhiều sự thay đổi nổi bật ở cả thiết kế, cấu h&igrave;nh v&agrave; những t&iacute;nh năng đi k&egrave;m.&nbsp;Chiếc điện thoại n&agrave;y hứa hẹn sẽ tạo n&ecirc;n sự b&ugrave;ng nổ trong ph&acirc;n kh&uacute;c cao cấp v&agrave; mang lại những th&agrave;nh c&ocirc;ng tiếp theo cho h&atilde;ng điện thoại H&agrave;n Quốc.</p>
+                    'review' => '<p>Ch&iacute;nh thức ra mắt tại sự kiện MWC 2016 tổ chức tại Barcelona (T&acirc;y Ban Nha), smartphone&nbsp;<a href="https://fptshop.com.vn/dien-thoai/samsung-galaxy-s7" target="_blank"><strong>Samsung Galaxy S7</strong></a>&nbsp;sở hữu nhiều sự thay đổi nổi bật ở cả thiết kế, cấu h&igrave;nh v&agrave; những t&iacute;nh năng đi k&egrave;m.&nbsp;Chiếc điện thoại n&agrave;y hứa hẹn sẽ tạo n&ecirc;n sự b&ugrave;ng nổ trong ph&acirc;n kh&uacute;c cao cấp v&agrave; mang lại những th&agrave;nh c&ocirc;ng tiếp theo cho h&atilde;ng điện thoại H&agrave;n Quốc.</p>
 
 <p>&nbsp;</p>
 
@@ -183,28 +180,26 @@ class ProductsTableSeeder extends Seeder
 
 <p>Hệ điều h&agrave;nh Android 6.0 Marshmallow mới nhất hiện nay kết hợp với c&ocirc;ng nghệ m&agrave;n h&igrave;nh Super AMOLED v&agrave; vi xử l&yacute; tiết kiệm điện năng c&ograve;n gi&uacute;p m&aacute;y c&oacute; được thời lượng pin l&acirc;u hơn, c&oacute; thể l&ecirc;n đến 2 ng&agrave;y ở điều kiện sử dụng th&ocirc;ng thường. C&ocirc;ng nghệ sạc nhanh sẽ gi&uacute;p r&uacute;t ngắn đ&aacute;ng kể thời gian chờ đợi của người d&ugrave;ng, ngo&agrave;i ra Galaxy S7 c&ograve;n được trang bị t&iacute;nh năng sạc kh&ocirc;ng d&acirc;y v&agrave; đặc biệt l&agrave; tản nhiệt bằng chất lỏng.</p>
 ',
-                'tag' => 'Galaxy S7, Galaxy S7,Galaxy S7',
-                'price' => '15890000',
-                'status' => 1,
-                'cat_id' => 4,
-                'user_id' => 1,
-                'created_at' => '2016-11-24 09:39:28',
-                'updated_at' => '2016-11-24 09:39:28',
-            ),
-            2 => 
-            array (
-                'id' => 24,
-                'name' => 'OPPO F1S',
-                'slug' => 'oppo-f1s',
-            'intro' => 'Apple A10 mới, 2 cammera sau,Ram 3g, 5.5 inch (1920 x 1080 pixels)',
-            'promo1' => 'Đặt Online hoặc Gọi 18006601 ưu tiên khuyến mãi (SL có hạn):',
-            'promo2' => 'Trả góp 0% (Chỉ áp dụng cho thẻ tín dụng) ',
-                'promo3' => 'Tặng Voucher 500.000đ mua Apple Watch',
-                'packet' => '',
-                'images' => '1480650741_oppo-f1s-hero-400x460-400x460.png',
-                'r_intro' => '<p>Với những t&iacute;nh năng vượt trội về camera, iPhone 7 Plus l&agrave; sản phẩm nổi bật c&ograve;n hơn cả iPhone khi c&ugrave;ng ra mắt, khả năng chụp ảnh zoom 10x với camera k&eacute;p v&agrave; chụp ch&acirc;n dung xo&aacute; ph&ocirc;ng đ&atilde; thuyết phục người d&ugrave;ng một c&aacute;ch ngọt ng&agrave;o nhất. Kh&ocirc;ng chỉ vậy, n&acirc;ng cấp về cấu h&igrave;nh, &acirc;m thanh, thiết kế tinh tế hơn v&agrave; phi&ecirc;n bản bộ nhớ l&ecirc;n đến 128 GB cũng khiến đ&acirc;y l&agrave; sản phẩm đ&aacute;ng mua nhất trong lần ra mắt loạt phi&ecirc;n bản mới của Apple</p>
+                    'tag' => 'Galaxy S7, Galaxy S7,Galaxy S7',
+                    'price' => '15890000',
+                    'status' => 1,
+                    'cat_id' => 4,
+                    'created_at' => '2016-11-24 09:39:28',
+                    'updated_at' => '2016-11-24 09:39:28',
+                ),
+            2 =>
+                array(
+                    'product_id' => 24,
+                    'name' => 'OPPO F1S',
+                    'slug' => 'oppo-f1s',
+                    'intro' => 'Apple A10 mới, 2 cammera sau,Ram 3g, 5.5 inch (1920 x 1080 pixels)',
+                    'promotion' => 'Trả góp 0%, Tặng Vali Lock & Lock, Tặng Combo Quà (Bao da S-View + Tai nghe Level Active)',
+                    'sale' => 10,
+                    'packet' => '',
+                    'images' => '1480650741_oppo-f1s-hero-400x460-400x460.png',
+                    'r_intro' => '<p>Với những t&iacute;nh năng vượt trội về camera, iPhone 7 Plus l&agrave; sản phẩm nổi bật c&ograve;n hơn cả iPhone khi c&ugrave;ng ra mắt, khả năng chụp ảnh zoom 10x với camera k&eacute;p v&agrave; chụp ch&acirc;n dung xo&aacute; ph&ocirc;ng đ&atilde; thuyết phục người d&ugrave;ng một c&aacute;ch ngọt ng&agrave;o nhất. Kh&ocirc;ng chỉ vậy, n&acirc;ng cấp về cấu h&igrave;nh, &acirc;m thanh, thiết kế tinh tế hơn v&agrave; phi&ecirc;n bản bộ nhớ l&ecirc;n đến 128 GB cũng khiến đ&acirc;y l&agrave; sản phẩm đ&aacute;ng mua nhất trong lần ra mắt loạt phi&ecirc;n bản mới của Apple</p>
 ',
-                'review' => '<h3><strong>Thiết kế ho&agrave;n thiện hơn</strong></h3>
+                    'review' => '<h3><strong>Thiết kế ho&agrave;n thiện hơn</strong></h3>
 
 <p>&nbsp;</p>
 
@@ -296,28 +291,26 @@ class ProductsTableSeeder extends Seeder
 
 <p><em>Lưu &yacute;: B&agrave;i viết v&agrave; h&igrave;nh ảnh chỉ c&oacute; t&iacute;nh chất tham khảo v&igrave; cấu h&igrave;nh v&agrave; đặc t&iacute;nh sản phẩm c&oacute; thể thay đổi theo thị trường v&agrave; từng phi&ecirc;n bản. Vui l&ograve;ng gọi tổng đ&agrave;i miễn ph&iacute; 18006601 hoặc đến cửa h&agrave;ng FPT Shop để nhận th&ocirc;ng tin ch&iacute;nh x&aacute;c nhất về sản phẩm.</em></p>
 ',
-                'tag' => 'Ipple',
-                'price' => '5990000',
-                'status' => 1,
-                'cat_id' => 16,
-                'user_id' => 1,
-                'created_at' => '2016-11-24 18:48:39',
-                'updated_at' => '2016-12-01 20:52:21',
-            ),
-            3 => 
-            array (
-                'id' => 25,
-                'name' => 'iPhone 7 Plus 128GB',
-                'slug' => 'iphone-7-plus-128gb',
-            'intro' => 'Apple A10 mới, 2 cammera sau,Ram 3g, 5.5 inch (1920 x 1080 pixels)',
-                'promo1' => 'Đặt Online hoặc Gọi 18006601',
-            'promo2' => 'Trả góp 0% (Chỉ áp dụng cho thẻ tín dụng)',
-                'promo3' => 'Tặng Voucher 500.000đ mua Apple Watch',
-                'packet' => '',
-                'images' => '1480038525_636089592275907954_7-plus-chi-tiet.jpg',
-                'r_intro' => '<p>Với những t&iacute;nh năng vượt trội về camera, iPhone 7 Plus l&agrave; sản phẩm nổi bật c&ograve;n hơn cả iPhone khi c&ugrave;ng ra mắt, khả năng chụp ảnh zoom 10x với camera k&eacute;p v&agrave; chụp ch&acirc;n dung xo&aacute; ph&ocirc;ng đ&atilde; thuyết phục người d&ugrave;ng một c&aacute;ch ngọt ng&agrave;o nhất. Kh&ocirc;ng chỉ vậy, n&acirc;ng cấp về cấu h&igrave;nh, &acirc;m thanh, thiết kế tinh tế hơn v&agrave; phi&ecirc;n bản bộ nhớ l&ecirc;n đến 128 GB cũng khiến đ&acirc;y l&agrave; sản phẩm đ&aacute;ng mua nhất trong lần ra mắt loạt phi&ecirc;n bản mới của Apple</p>
+                    'tag' => 'Ipple',
+                    'price' => '5990000',
+                    'status' => 1,
+                    'cat_id' => 16,
+                    'created_at' => '2016-11-24 18:48:39',
+                    'updated_at' => '2016-12-01 20:52:21',
+                ),
+            3 =>
+                array(
+                    'product_id' => 25,
+                    'name' => 'iPhone 7 Plus 128GB',
+                    'slug' => 'iphone-7-plus-128gb',
+                    'intro' => 'Apple A10 mới, 2 cammera sau,Ram 3g, 5.5 inch (1920 x 1080 pixels)',
+                    'promotion' => 'Trả góp 0%, Tặng Vali Lock & Lock, Tặng Combo Quà (Bao da S-View + Tai nghe Level Active)',
+                    'sale' => 20,
+                    'packet' => '',
+                    'images' => '1480038525_636089592275907954_7-plus-chi-tiet.jpg',
+                    'r_intro' => '<p>Với những t&iacute;nh năng vượt trội về camera, iPhone 7 Plus l&agrave; sản phẩm nổi bật c&ograve;n hơn cả iPhone khi c&ugrave;ng ra mắt, khả năng chụp ảnh zoom 10x với camera k&eacute;p v&agrave; chụp ch&acirc;n dung xo&aacute; ph&ocirc;ng đ&atilde; thuyết phục người d&ugrave;ng một c&aacute;ch ngọt ng&agrave;o nhất. Kh&ocirc;ng chỉ vậy, n&acirc;ng cấp về cấu h&igrave;nh, &acirc;m thanh, thiết kế tinh tế hơn v&agrave; phi&ecirc;n bản bộ nhớ l&ecirc;n đến 128 GB cũng khiến đ&acirc;y l&agrave; sản phẩm đ&aacute;ng mua nhất trong lần ra mắt loạt phi&ecirc;n bản mới của Apple</p>
 ',
-                'review' => '<h3><strong>Thiết kế ho&agrave;n thiện hơn</strong></h3>
+                    'review' => '<h3><strong>Thiết kế ho&agrave;n thiện hơn</strong></h3>
 
 <p>&nbsp;</p>
 
@@ -409,131 +402,120 @@ class ProductsTableSeeder extends Seeder
 
 <p><em>Lưu &yacute;: B&agrave;i viết v&agrave; h&igrave;nh ảnh chỉ c&oacute; t&iacute;nh chất tham khảo v&igrave; cấu h&igrave;nh v&agrave; đặc t&iacute;nh sản phẩm c&oacute; thể thay đổi theo thị trường v&agrave; từng phi&ecirc;n bản. Vui l&ograve;ng gọi tổng đ&agrave;i miễn ph&iacute; 18006601 hoặc đến cửa h&agrave;ng FPT Shop để nhận th&ocirc;ng tin ch&iacute;nh x&aacute;c nhất về sản phẩm.</em></p>
 ',
-                'tag' => 'Ipple',
-                'price' => '25190000',
-                'status' => 1,
-                'cat_id' => 15,
-                'user_id' => 1,
-                'created_at' => '2016-11-24 18:48:45',
-                'updated_at' => '2016-12-01 20:53:36',
-            ),
-            4 => 
-            array (
-                'id' => 26,
-                'name' => 'Galaxy S7 EDGE',
-                'slug' => 'galaxy-s7-edge',
-                'intro' => 'sắp ra mắt',
-            'promo1' => 'Đặt Online hoặc Gọi 18006601 ưu tiên khuyến mãi (SL có hạn):',
-                'promo2' => 'Hoặc Tặng Vali Lock & Lock ',
-                'promo3' => 'Tặng Voucher 500.000đ mua Apple Watch',
-                'packet' => ' Hộp, Sạc, Tai nghe, Sách hướng dẫn, Cáp OTG, Cáp, Cây lấy sim ',
-                'images' => '1480399297_s7 edge.png',
-                'r_intro' => '<p>sắp ra mắt</p>
+                    'tag' => 'Ipple',
+                    'price' => '25190000',
+                    'status' => 1,
+                    'cat_id' => 15,
+                    'created_at' => '2016-11-24 18:48:45',
+                    'updated_at' => '2016-12-01 20:53:36',
+                ),
+            4 =>
+                array(
+                    'product_id' => 26,
+                    'name' => 'Galaxy S7 EDGE',
+                    'slug' => 'galaxy-s7-edge',
+                    'intro' => 'sắp ra mắt',
+                    'promotion' => 'Trả góp 0%, Tặng Vali Lock & Lock, Tặng Combo Quà (Bao da S-View + Tai nghe Level Active)',
+                    'sale' => 30,
+                    'packet' => ' Hộp, Sạc, Tai nghe, Sách hướng dẫn, Cáp OTG, Cáp, Cây lấy sim ',
+                    'images' => '1480399297_s7 edge.png',
+                    'r_intro' => '<p>sắp ra mắt</p>
 ',
-                'review' => '<p>sản phẩm sắp được ra mắt</p>
+                    'review' => '<p>sản phẩm sắp được ra mắt</p>
 ',
-                'tag' => 'Galaxy S8, Galaxy S8,Galaxy S8',
-                'price' => '18490000',
-                'status' => 1,
-                'cat_id' => 4,
-                'user_id' => 1,
-                'created_at' => '2016-11-25 23:44:07',
-                'updated_at' => '2016-11-28 23:01:37',
-            ),
-            5 => 
-            array (
-                'id' => 27,
-                'name' => 'Galaxy S8',
-                'slug' => 'galaxy-s8',
-                'intro' => 'sắp ra mắt',
-            'promo1' => 'Đặt Online hoặc Gọi 18006601 ưu tiên khuyến mãi (SL có hạn):',
-                'promo2' => 'Hoặc Tặng Vali Lock & Lock ',
-                'promo3' => 'Tặng Voucher 500.000đ mua Apple Watch',
-                'packet' => ' Hộp, Sạc, Tai nghe, Sách hướng dẫn, Cáp OTG, Cáp, Cây lấy sim ',
-                'images' => '1480399312_s7 edge.png',
-                'r_intro' => '<p>sắp ra mắt</p>
+                    'tag' => 'Galaxy S8, Galaxy S8,Galaxy S8',
+                    'price' => '18490000',
+                    'status' => 1,
+                    'cat_id' => 4,
+                    'created_at' => '2016-11-25 23:44:07',
+                    'updated_at' => '2016-11-28 23:01:37',
+                ),
+            5 =>
+                array(
+                    'product_id' => 27,
+                    'name' => 'Galaxy S8',
+                    'slug' => 'galaxy-s8',
+                    'intro' => 'sắp ra mắt',
+                    'promotion' => 'Trả góp 0%, Tặng Vali Lock & Lock, Tặng Combo Quà (Bao da S-View + Tai nghe Level Active)',
+                    'sale' => 0,
+                    'packet' => ' Hộp, Sạc, Tai nghe, Sách hướng dẫn, Cáp OTG, Cáp, Cây lấy sim ',
+                    'images' => '1480399312_s7 edge.png',
+                    'r_intro' => '<p>sắp ra mắt</p>
 ',
-                'review' => '<p>sản phẩm sắp được ra mắt</p>
+                    'review' => '<p>sản phẩm sắp được ra mắt</p>
 ',
-                'tag' => 'Galaxy S8, Galaxy S8,Galaxy S8',
-                'price' => '18490000',
-                'status' => 1,
-                'cat_id' => 4,
-                'user_id' => 1,
-                'created_at' => '2016-11-25 23:44:11',
-                'updated_at' => '2016-11-28 23:01:52',
-            ),
-            6 => 
-            array (
-                'id' => 28,
-                'name' => 'Galaxy S8',
-                'slug' => 'galaxy-s8',
-                'intro' => 'sắp ra mắt',
-            'promo1' => 'Đặt Online hoặc Gọi 18006601 ưu tiên khuyến mãi (SL có hạn):',
-                'promo2' => 'Hoặc Tặng Vali Lock & Lock ',
-                'promo3' => 'Tặng Voucher 500.000đ mua Apple Watch',
-                'packet' => ' Hộp, Sạc, Tai nghe, Sách hướng dẫn, Cáp OTG, Cáp, Cây lấy sim ',
-                'images' => '1480399324_s7 edge.png',
-                'r_intro' => '<p>sắp ra mắt</p>
+                    'tag' => 'Galaxy S8, Galaxy S8,Galaxy S8',
+                    'price' => '18490000',
+                    'status' => 1,
+                    'cat_id' => 4,
+                    'created_at' => '2016-11-25 23:44:11',
+                    'updated_at' => '2016-11-28 23:01:52',
+                ),
+            6 =>
+                array(
+                    'product_id' => 28,
+                    'name' => 'Galaxy S8',
+                    'slug' => 'galaxy-s8',
+                    'intro' => 'sắp ra mắt',
+                    'promotion' => 'Trả góp 0%, Tặng Vali Lock & Lock, Tặng Combo Quà (Bao da S-View + Tai nghe Level Active)',
+                    'sale' => 20,
+                    'packet' => ' Hộp, Sạc, Tai nghe, Sách hướng dẫn, Cáp OTG, Cáp, Cây lấy sim ',
+                    'images' => '1480399324_s7 edge.png',
+                    'r_intro' => '<p>sắp ra mắt</p>
 ',
-                'review' => '<p>sản phẩm sắp được ra mắt</p>
+                    'review' => '<p>sản phẩm sắp được ra mắt</p>
 ',
-                'tag' => 'Galaxy S8, Galaxy S8,Galaxy S8',
-                'price' => '18490000',
-                'status' => 1,
-                'cat_id' => 4,
-                'user_id' => 1,
-                'created_at' => '2016-11-25 23:44:15',
-                'updated_at' => '2016-11-28 23:02:04',
-            ),
-            7 => 
-            array (
-                'id' => 34,
-                'name' => 'ZENFONE 3 MAX',
-                'slug' => 'zenfone-3-max',
-                'intro' => 'sắp ra mắt',
-            'promo1' => 'Đặt Online hoặc Gọi 18006601 ưu tiên khuyến mãi (SL có hạn):',
-                'promo2' => 'Hoặc Tặng Vali Lock & Lock ',
-                'promo3' => 'Tặng Voucher 500.000đ mua Apple Watch',
-                'packet' => ' Hộp, Sạc, Tai nghe, Sách hướng dẫn, Cáp OTG, Cáp, Cây lấy sim ',
-                'images' => '1480399412_asus-zenfone-3-max-400-400x460.png',
-                'r_intro' => '<p>sắp ra mắt</p>
+                    'tag' => 'Galaxy S8, Galaxy S8,Galaxy S8',
+                    'price' => '18490000',
+                    'status' => 1,
+                    'cat_id' => 4,
+                    'created_at' => '2016-11-25 23:44:15',
+                    'updated_at' => '2016-11-28 23:02:04',
+                ),
+            7 =>
+                array(
+                    'product_id' => 34,
+                    'name' => 'ZENFONE 3 MAX',
+                    'slug' => 'zenfone-3-max',
+                    'intro' => 'sắp ra mắt',
+                    'promotion' => 'Trả góp 0%, Tặng Vali Lock & Lock, Tặng Combo Quà (Bao da S-View + Tai nghe Level Active)',
+                    'sale' => 10,
+                    'packet' => ' Hộp, Sạc, Tai nghe, Sách hướng dẫn, Cáp OTG, Cáp, Cây lấy sim ',
+                    'images' => '1480399412_asus-zenfone-3-max-400-400x460.png',
+                    'r_intro' => '<p>sắp ra mắt</p>
 ',
-                'review' => '<p>sản phẩm sắp được ra mắt</p>
+                    'review' => '<p>sản phẩm sắp được ra mắt</p>
 ',
-                'tag' => 'Galaxy S8, Galaxy S8,Galaxy S8',
-                'price' => '18490000',
-                'status' => 1,
-                'cat_id' => 3,
-                'user_id' => 1,
-                'created_at' => '2016-11-25 23:45:03',
-                'updated_at' => '2016-11-28 23:03:32',
-            ),
-            8 => 
-            array (
-                'id' => 35,
-                'name' => 'Zenfone 2 Laser',
-                'slug' => 'zenfone-2-laser',
-                'intro' => 'sắp ra mắt',
-            'promo1' => 'Đặt Online hoặc Gọi 18006601 ưu tiên khuyến mãi (SL có hạn):',
-                'promo2' => 'Hoặc Tặng Vali Lock & Lock ',
-                'promo3' => 'Tặng Voucher 500.000đ mua Apple Watch',
-                'packet' => ' Hộp, Sạc, Tai nghe, Sách hướng dẫn, Cáp OTG, Cáp, Cây lấy sim ',
-                'images' => '1480399445_asus-zenfone-2-laser-1-400x460.png',
-                'r_intro' => '<p>sắp ra mắt</p>
+                    'tag' => 'Galaxy S8, Galaxy S8,Galaxy S8',
+                    'price' => '18490000',
+                    'status' => 1,
+                    'cat_id' => 3,
+                    'created_at' => '2016-11-25 23:45:03',
+                    'updated_at' => '2016-11-28 23:03:32',
+                ),
+            8 =>
+                array(
+                    'product_id' => 35,
+                    'name' => 'Zenfone 2 Laser',
+                    'slug' => 'zenfone-2-laser',
+                    'intro' => 'sắp ra mắt',
+                    'promotion' => 'Trả góp 0%, Tặng Vali Lock & Lock, Tặng Combo Quà (Bao da S-View + Tai nghe Level Active)',
+                    'sale' => 0,
+                    'packet' => ' Hộp, Sạc, Tai nghe, Sách hướng dẫn, Cáp OTG, Cáp, Cây lấy sim ',
+                    'images' => '1480399445_asus-zenfone-2-laser-1-400x460.png',
+                    'r_intro' => '<p>sắp ra mắt</p>
 ',
-                'review' => '<p>sản phẩm sắp được ra mắt</p>
+                    'review' => '<p>sản phẩm sắp được ra mắt</p>
 ',
-                'tag' => 'Galaxy S8, Galaxy S8,Galaxy S8',
-                'price' => '18490000',
-                'status' => 1,
-                'cat_id' => 3,
-                'user_id' => 1,
-                'created_at' => '2016-11-25 23:45:08',
-                'updated_at' => '2016-11-28 23:04:05',
-            ),
+                    'tag' => 'Galaxy S8, Galaxy S8,Galaxy S8',
+                    'price' => '18490000',
+                    'status' => 1,
+                    'cat_id' => 3,
+                    'created_at' => '2016-11-25 23:45:08',
+                    'updated_at' => '2016-11-28 23:04:05',
+                ),
         ));
-        
-        
+
+
     }
 }

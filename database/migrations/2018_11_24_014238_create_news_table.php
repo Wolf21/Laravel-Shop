@@ -13,7 +13,7 @@ class CreateNewsTable extends Migration
     public function up()
     {
         Schema::create('news', function (Blueprint $table) {
-            $table->increments('id');
+            $table->increments('new_id');
             $table->string('title');
             $table->string('slug');
             $table->string('author');            
@@ -24,9 +24,9 @@ class CreateNewsTable extends Migration
             $table->text('source');
             $table->text('tag');
             $table->integer('cat_id')->unsigned();
-            $table->foreign('cat_id')->references('id')->on('categories')->onDelete('cascade');
-            $table->integer('user_id')->unsigned();
-            $table->foreign('user_id')->references('id')->on('users')->onDelete('cascade');
+            $table->foreign('cat_id')->references('cat_id')->on('categories')->onDelete('cascade');
+            $table->integer('created_uid')->default(1);
+            $table->integer('updated_uid')->default(1);
             $table->timestamps();
         });
     }

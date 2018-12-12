@@ -19,7 +19,7 @@ class CategoriesTableSeeder extends Seeder
         \DB::table('categories')->insert(array (
             0 => 
             array (
-                'id' => 1,
+                'cat_id' => 1,
                 'name' => 'Mobile - Điện thoại',
                 'slug' => 'mobile-dien-thoai',
                 'parent_id' => '0',
@@ -28,7 +28,7 @@ class CategoriesTableSeeder extends Seeder
             ),
             1 => 
             array (
-                'id' => 2,
+                'cat_id' => 2,
                 'name' => 'LAPTOP - Máy tính xách tay',
                 'slug' => 'laptop-may-tinh-xach-tay',
                 'parent_id' => '0',
@@ -37,7 +37,7 @@ class CategoriesTableSeeder extends Seeder
             ),
             2 => 
             array (
-                'id' => 3,
+                'cat_id' => 3,
                 'name' => 'Asus - ZenFones',
                 'slug' => 'asus-zenfones',
                 'parent_id' => '1',
@@ -46,7 +46,7 @@ class CategoriesTableSeeder extends Seeder
             ),
             3 => 
             array (
-                'id' => 4,
+                'cat_id' => 4,
                 'name' => 'Samsung',
                 'slug' => 'samsung',
                 'parent_id' => '1',
@@ -55,7 +55,7 @@ class CategoriesTableSeeder extends Seeder
             ),
             4 => 
             array (
-                'id' => 9,
+                'cat_id' => 9,
                 'name' => 'DELL',
                 'slug' => 'dell',
                 'parent_id' => '2',
@@ -64,7 +64,7 @@ class CategoriesTableSeeder extends Seeder
             ),
             5 => 
             array (
-                'id' => 10,
+                'cat_id' => 10,
                 'name' => 'ASUS',
                 'slug' => 'asus',
                 'parent_id' => '2',
@@ -73,7 +73,7 @@ class CategoriesTableSeeder extends Seeder
             ),
             6 => 
             array (
-                'id' => 11,
+                'cat_id' => 11,
                 'name' => 'HP',
                 'slug' => 'hp',
                 'parent_id' => '2',
@@ -82,7 +82,7 @@ class CategoriesTableSeeder extends Seeder
             ),
             7 => 
             array (
-                'id' => 13,
+                'cat_id' => 13,
                 'name' => 'TIN TỨC - KHUYỄN MẠI',
                 'slug' => 'tin-tuc-khuyen-mai',
                 'parent_id' => '0',
@@ -91,7 +91,7 @@ class CategoriesTableSeeder extends Seeder
             ),
             8 => 
             array (
-                'id' => 14,
+                'cat_id' => 14,
                 'name' => 'QUẢNG CÁO - BANNER',
                 'slug' => 'quang-cao-banner',
                 'parent_id' => '0',
@@ -100,7 +100,7 @@ class CategoriesTableSeeder extends Seeder
             ),
             9 => 
             array (
-                'id' => 15,
+                'cat_id' => 15,
             'name' => 'Apple (Iphone)',
                 'slug' => 'apple-iphone',
                 'parent_id' => '1',
@@ -109,7 +109,7 @@ class CategoriesTableSeeder extends Seeder
             ),
             10 => 
             array (
-                'id' => 16,
+                'cat_id' => 16,
                 'name' => 'OPPO',
                 'slug' => 'oppo',
                 'parent_id' => '1',
@@ -118,7 +118,7 @@ class CategoriesTableSeeder extends Seeder
             ),
             11 => 
             array (
-                'id' => 17,
+                'cat_id' => 17,
                 'name' => 'Sony',
                 'slug' => 'sony',
                 'parent_id' => '1',
@@ -127,7 +127,7 @@ class CategoriesTableSeeder extends Seeder
             ),
             12 => 
             array (
-                'id' => 18,
+                'cat_id' => 18,
                 'name' => 'LENOVO',
                 'slug' => 'lenovo',
                 'parent_id' => '2',
@@ -136,7 +136,7 @@ class CategoriesTableSeeder extends Seeder
             ),
             13 => 
             array (
-                'id' => 19,
+                'cat_id' => 19,
                 'name' => 'PC - Máy bộ',
                 'slug' => 'pc-may-bo',
                 'parent_id' => '0',
@@ -145,7 +145,7 @@ class CategoriesTableSeeder extends Seeder
             ),
             14 => 
             array (
-                'id' => 20,
+                'cat_id' => 20,
                 'name' => 'Máy bộ DELL',
                 'slug' => 'may-bo-dell',
                 'parent_id' => '19',
@@ -154,7 +154,7 @@ class CategoriesTableSeeder extends Seeder
             ),
             15 => 
             array (
-                'id' => 21,
+                'cat_id' => 21,
                 'name' => 'Máy bộ Asus - Gamming',
                 'slug' => 'may-bo-asus-gamming',
                 'parent_id' => '19',
@@ -163,7 +163,7 @@ class CategoriesTableSeeder extends Seeder
             ),
             16 => 
             array (
-                'id' => 22,
+                'cat_id' => 22,
                 'name' => 'Tin Công Nghệ',
                 'slug' => 'tin-cong-nghe',
                 'parent_id' => '13',
@@ -172,7 +172,7 @@ class CategoriesTableSeeder extends Seeder
             ),
             17 => 
             array (
-                'id' => 23,
+                'cat_id' => 23,
                 'name' => 'Tin khuyễn mại',
                 'slug' => 'tin-khuyen-mai',
                 'parent_id' => '13',

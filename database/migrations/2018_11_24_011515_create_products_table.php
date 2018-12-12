@@ -13,13 +13,14 @@ class CreateProductsTable extends Migration
     public function up()
     {
         Schema::create('products', function (Blueprint $table) {
-            $table->increments('id');
+            $table->increments('product_id');
             $table->string('name');
             $table->string('slug');
             $table->string('intro');
-            $table->string('promo1');
-            $table->string('promo2');
-            $table->string('promo3');
+            $table->string('promotion');
+            $table->smallInteger('sale')->default(0);
+            $table->integer('rate')->default(0);
+            $table->smallInteger('deal')->default(0);
             $table->string('packet');
             $table->text('images');
             $table->text('r_intro');
@@ -28,9 +29,9 @@ class CreateProductsTable extends Migration
             $table->decimal('price', 13, 2);
             $table->integer('status');
             $table->integer('cat_id')->unsigned();
-            $table->foreign('cat_id')->references('id')->on('categories')->onDelete('cascade');
-            $table->integer('user_id')->unsigned();
-            $table->foreign('user_id')->references('id')->on('users')->onDelete('cascade');
+            $table->foreign('cat_id')->references('cat_id')->on('categories')->onDelete('cascade');
+            $table->integer('created_uid')->default(1);
+            $table->integer('updated_uid')->default(1);
             $table->timestamps();
         });
     }

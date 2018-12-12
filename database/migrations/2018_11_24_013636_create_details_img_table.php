@@ -15,8 +15,8 @@ class CreateDetailsImgTable extends Migration
         Schema::create('details_img', function (Blueprint $table) {
             $table->increments('id');
             $table->text('images_url');            
-            $table->integer('pro_id')->unsigned();
-            $table->foreign('pro_id')->references('id')->on('products')->onDelete('cascade');
+            $table->integer('product_id')->unsigned();
+            $table->foreign('product_id')->references('product_id')->on('products')->onDelete('cascade');
             $table->timestamps();
         });
     }
