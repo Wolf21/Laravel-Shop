@@ -67,4 +67,49 @@ class ProductService
             )->orderby('products.product_id', 'ASC')
             ->get();
     }
+
+    /**
+     * @return mixed
+     */
+    public static function getTop10BestSell()
+    {
+        return Products::join('order_details', 'products.product_id', '=', 'order_details.product_id')
+            ->join('categories', 'products.cat_id', '=', 'categories.cat_id')
+            ->groupby('order_details.product_id')
+            ->select(
+                'products.product_id',
+                'products.name AS product_name',
+                'products.sale AS sale',
+                'products.price AS price',
+                'products.images AS images',
+                'categories.name AS cat_name'
+            )->selectRaw('SUM(order_details.quantity) as quantity')
+            ->orderby('quantity', 'DESC')
+            ->limit(10)
+            ->get();
+    }
+
+    /**
+     * @param $cat_id
+     * @return mixed
+     */
+    public static function getProductBestSellByCategory($cat_id)
+    {
+        return Products::join('order_details', 'products.product_id', '=', 'order_details.product_id')
+            ->join('categories', 'products.cat_id', '=', 'categories.cat_id')
+            ->groupby('order_details.product_id')
+            ->select(
+                'products.product_id',
+                'products.name AS product_name',
+                'products.sale AS sale',
+                'products.price AS price',
+                'products.images AS images',
+                'categories.name AS cat_name'
+            )->selectRaw('SUM(order_details.quantity) as quantity')
+            ->where('products.cat_id', $cat_id)
+            ->orderby('quantity', 'DESC')
+            ->limit(10)
+            ->get();
+    }
+
 }

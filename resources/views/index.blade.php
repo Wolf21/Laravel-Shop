@@ -28,18 +28,54 @@
         </div>
     </div>
 
-    <!-- Characteristics -->
-
     <div class="characteristics">
         <div class="container">
             <div class="row">
+
                 <!-- Char. Item -->
                 <div class="col-lg-3 col-md-6 char_col">
+
                     <div class="char_item d-flex flex-row align-items-center justify-content-start">
                         <div class="char_icon"><img src="images/char_1.png" alt=""></div>
                         <div class="char_content">
-                            <div class="char_title">Free Delivery</div>
-                            <div class="char_subtitle">from $50</div>
+                            <div class="char_title">Miễn Phí Vận Chuyển</div>
+                            <div class="char_subtitle">Từ 10,000,000 VNĐ</div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Char. Item -->
+                <div class="col-lg-3 col-md-6 char_col">
+
+                    <div class="char_item d-flex flex-row align-items-center justify-content-start">
+                        <div class="char_icon"><img src="images/char_2.png" alt=""></div>
+                        <div class="char_content">
+                            <div class="char_title">Miễn Phí Vận Chuyển</div>
+                            <div class="char_subtitle">Dưới 15 KM</div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Char. Item -->
+                <div class="col-lg-3 col-md-6 char_col">
+
+                    <div class="char_item d-flex flex-row align-items-center justify-content-start">
+                        <div class="char_icon"><img src="images/char_3.png" alt=""></div>
+                        <div class="char_content">
+                            <div class="char_title">Miễn Phí Vận Chuyển</div>
+                            <div class="char_subtitle">Khách Hàng Thân Thiết</div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Char. Item -->
+                <div class="col-lg-3 col-md-6 char_col">
+
+                    <div class="char_item d-flex flex-row align-items-center justify-content-start">
+                        <div class="char_icon"><img src="images/char_4.png" alt=""></div>
+                        <div class="char_content">
+                            <div class="char_title">Miễn Phí Vận Chuyển</div>
+                            <div class="char_subtitle">Đổi Trả Do Lỗi Shop</div>
                         </div>
                     </div>
                 </div>
@@ -54,7 +90,7 @@
                 <div class="col d-flex flex-lg-row flex-column align-items-center justify-content-start">
                     <!-- Deals -->
                     <div class="deals">
-                        <div class="deals_title">Deals of the Week</div>
+                        <div class="deals_title">Deals Của Tuần</div>
                         <div class="deals_slider_container">
                             <!-- Deals Slider -->
                             <div class="owl-carousel owl-theme deals_slider">
@@ -62,22 +98,22 @@
                                 <!-- Deals Item -->
                                     <div class="owl-item deals_item">
                                         <div class="deals_image"><img
-                                                    src="{{ url('/') .'/uploads/products/'. $product->images }}" alt="">
+                                                src="{{ url('/') .'/uploads/products/'. $product->images }}" alt="">
                                         </div>
                                         <div class="deals_content">
                                             <div class="deals_info_line d-flex flex-row justify-content-start">
                                                 <div class="deals_item_category"><a
-                                                            href="#">{{ $product->cat_name }}</a>
+                                                        href="#">{{ $product->cat_name }}</a>
                                                 </div>
                                                 <div
-                                                        class="deals_item_price_a ml-auto price_old">{{ number_format($product->price) }}
+                                                    class="deals_item_price_a ml-auto price_old">{{ number_format($product->price) }}
                                                     VNĐ
                                                 </div>
                                             </div>
                                             <div class="deals_info_line d-flex flex-row justify-content-start">
                                                 <div class="deals_item_name">{{ $product->product_name }}</div>
                                                 <div
-                                                        class="deals_item_price ml-auto">{{ number_format($product->price * (100 - $product->sale) / 100) }}
+                                                    class="deals_item_price ml-auto">{{ number_format($product->price * (100 - $product->sale) / 100) }}
                                                     VNĐ
                                                 </div>
                                             </div>
@@ -91,7 +127,7 @@
                                                 <div class="available_bar"><span style="width:17%"></span></div>
                                             </div>
                                             <div
-                                                    class="deals_timer d-flex flex-row align-items-center justify-content-start">
+                                                class="deals_timer d-flex flex-row align-items-center justify-content-start">
                                                 <div class="deals_timer_title_container">
                                                     <div class="deals_timer_title">Hurry Up</div>
                                                     <div class="deals_timer_subtitle">Offer ends in:</div>
@@ -130,8 +166,8 @@
                         <div class="tabbed_container">
                             <div class="tabs">
                                 <ul class="clearfix">
-                                    <li class="active">On Sale</li>
-                                    <li>Best Rated</li>
+                                    <li class="active">Khuyễn Mãi</li>
+                                    <li>Yêu Thích</li>
                                 </ul>
                                 <div class="tabs_line"><span></span></div>
                             </div>
@@ -143,9 +179,9 @@
                                         <div class="featured_slider_item">
                                             <div class="border_active"></div>
                                             <div
-                                                    class="product_item discount d-flex flex-column align-items-center justify-content-center text-center">
+                                                class="product_item discount d-flex flex-column align-items-center justify-content-center text-center">
                                                 <div
-                                                        class="product_image d-flex flex-column align-items-center justify-content-center">
+                                                    class="product_image d-flex flex-column align-items-center justify-content-center">
                                                     <img src="{{ url('') .'/uploads/products/'. $product->images }}"
                                                          alt="">
                                                 </div>
@@ -160,7 +196,7 @@
                                                     <div class="price_old">{{ number_format($product->price) }} VNĐ
                                                     </div>
                                                     <div class="product_extras">
-                                                        <button class="product_cart_button">Add to Cart</button>
+                                                        <button class="product_cart_button">Thêm Vào Giỏ Hàng</button>
                                                     </div>
                                                 </div>
                                                 <div class="product_fav"><i class="fas fa-heart"></i></div>
@@ -181,9 +217,9 @@
                                         <div class="featured_slider_item">
                                             <div class="border_active"></div>
                                             <div
-                                                    class="product_item discount d-flex flex-column align-items-center justify-content-center text-center">
+                                                class="product_item discount d-flex flex-column align-items-center justify-content-center text-center">
                                                 <div
-                                                        class="product_image d-flex flex-column align-items-center justify-content-center">
+                                                    class="product_image d-flex flex-column align-items-center justify-content-center">
                                                     <img src="{{ url('') .'/uploads/products/'. $product->images }}"
                                                          alt="">
                                                 </div>
@@ -204,7 +240,7 @@
                                                         </div>
                                                     @endif
                                                     <div class="product_extras">
-                                                        <button class="product_cart_button">Add to Cart</button>
+                                                        <button class="product_cart_button">Thêm Vào Giỏ Hàng</button>
                                                     </div>
                                                 </div>
                                                 <div class="product_fav"><i class="fas fa-heart"></i></div>
@@ -273,7 +309,7 @@
                 <div class="col">
                     <div class="tabbed_container">
                         <div class="tabs clearfix tabs-right">
-                            <div class="new_arrivals_title">Hot New Arrivals</div>
+                            <div class="new_arrivals_title">Sản Phẩm Hot</div>
                             <ul class="clearfix">
                                 <li class="active">IOS</li>
                                 <li>ANDROID</li>
@@ -291,9 +327,9 @@
                                         <div class="arrivals_slider_item">
                                             <div class="border_active"></div>
                                             <div
-                                                    class="product_item is_new d-flex flex-column align-items-center justify-content-center text-center">
+                                                class="product_item is_new d-flex flex-column align-items-center justify-content-center text-center">
                                                 <div
-                                                        class="product_image d-flex flex-column align-items-center justify-content-center">
+                                                    class="product_image d-flex flex-column align-items-center justify-content-center">
                                                     <img src="{{ url('') .'/uploads/products/'. $product->images }}"
                                                          alt=""></div>
                                                 <div class="product_content">
@@ -312,7 +348,7 @@
                                                             <input type="radio" name="product_color"
                                                                    style="background:#999999">
                                                         </div>
-                                                        <button class="product_cart_button">Add to Cart</button>
+                                                        <button class="product_cart_button">Thêm Vào Giỏ Hàng</button>
                                                     </div>
                                                 </div>
                                                 <div class="product_fav"><i class="fas fa-heart"></i></div>
@@ -334,9 +370,9 @@
                                             <div class="arrivals_slider_item">
                                                 <div class="border_active"></div>
                                                 <div
-                                                        class="product_item is_new d-flex flex-column align-items-center justify-content-center text-center">
+                                                    class="product_item is_new d-flex flex-column align-items-center justify-content-center text-center">
                                                     <div
-                                                            class="product_image d-flex flex-column align-items-center justify-content-center">
+                                                        class="product_image d-flex flex-column align-items-center justify-content-center">
                                                         <img src="{{ url('') .'/uploads/products/'. $product->images }}"
                                                              alt=""></div>
                                                     <div class="product_content">
@@ -355,7 +391,8 @@
                                                                 <input type="radio" name="product_color"
                                                                        style="background:#999999">
                                                             </div>
-                                                            <button class="product_cart_button">Add to Cart</button>
+                                                            <button class="product_cart_button">Thêm Vào Giỏ Hàng
+                                                            </button>
                                                         </div>
                                                     </div>
                                                     <div class="product_fav"><i class="fas fa-heart"></i></div>
@@ -377,9 +414,9 @@
                                             <div class="arrivals_slider_item">
                                                 <div class="border_active"></div>
                                                 <div
-                                                        class="product_item is_new d-flex flex-column align-items-center justify-content-center text-center">
+                                                    class="product_item is_new d-flex flex-column align-items-center justify-content-center text-center">
                                                     <div
-                                                            class="product_image d-flex flex-column align-items-center justify-content-center">
+                                                        class="product_image d-flex flex-column align-items-center justify-content-center">
                                                         <img src="{{ url('') .'/uploads/products/'. $product->images }}"
                                                              alt=""></div>
                                                     <div class="product_content">
@@ -398,7 +435,8 @@
                                                                 <input type="radio" name="product_color"
                                                                        style="background:#999999">
                                                             </div>
-                                                            <button class="product_cart_button">Add to Cart</button>
+                                                            <button class="product_cart_button">Thêm Vào Giỏ Hàng
+                                                            </button>
                                                         </div>
                                                     </div>
                                                     <div class="product_fav"><i class="fas fa-heart"></i></div>
@@ -428,11 +466,11 @@
                                             <div class="rating_r rating_r_4 arrivals_single_rating">
                                                 <i></i><i></i><i></i><i></i><i></i></div>
                                             <form action="#">
-                                                <button class="arrivals_single_button">Add to Cart</button>
+                                                <button class="arrivals_single_button">Thêm Vào Giỏ Hàng</button>
                                             </form>
                                         </div>
                                         <div class="arrivals_single_fav product_fav active"><i
-                                                    class="fas fa-heart"></i>
+                                                class="fas fa-heart"></i>
                                         </div>
                                         <ul class="arrivals_single_marks product_marks">
                                             <li class="arrivals_single_mark product_mark product_new">new</li>
@@ -454,37 +492,147 @@
                 <div class="col">
                     <div class="tabbed_container">
                         <div class="tabs clearfix tabs-right">
-                            <div class="new_arrivals_title">Hot Best Sellers</div>
+                            <div class="new_arrivals_title">Bán Chạy Nhất</div>
                             <ul class="clearfix">
-                                <li class="active">Top 20</li>
-                                <li>IPORN</li>
+                                <li class="active">Top 10</li>
+                                <li>IPHONE</li>
                                 <li>SAMSUNG</li>
                             </ul>
                             <div class="tabs_line"><span></span></div>
                         </div>
                         <div class="bestsellers_panel panel active">
-                            <!-- Best Sellers Item -->
-                            <div class="bestsellers_item">
-                                <div
-                                        class="bestsellers_item_container d-flex flex-row align-items-center justify-content-start">
-                                    <div class="bestsellers_image"><img src="images/best_6.png" alt=""></div>
-                                    <div class="bestsellers_content">
-                                        <div class="bestsellers_category"><a href="#">Headphones</a></div>
-                                        <div class="bestsellers_name"><a href="product.blade.php">Xiaomi Redmi
-                                                Note
-                                                4</a></div>
-                                        <div class="rating_r rating_r_4 bestsellers_rating">
-                                            <i></i><i></i><i></i><i></i><i></i></div>
-                                        <div class="bestsellers_price discount">$225<span>$300</span></div>
+                            <div class="bestsellers_slider slider">
+                            @foreach($top10BestSell as $product)
+                                <!-- Best Sellers Item -->
+                                    <div class="bestsellers_item">
+                                        <div
+                                            class="bestsellers_item_container d-flex flex-row align-items-center justify-content-start">
+                                            <div class="bestsellers_image"><img
+                                                    src="{{ url('') .'/uploads/products/'. $product->images }}" alt="">
+                                            </div>
+                                            <div class="bestsellers_content">
+                                                <div class="bestsellers_category"><a
+                                                        href="#">{{ $product->cat_name }}</a>
+                                                </div>
+                                                <div class="bestsellers_name"><a
+                                                        href="product.blade.php">{{ $product->product_name }}</a></div>
+                                                <div class="rating_r rating_r_4 bestsellers_rating">
+                                                    <i></i><i></i><i></i><i></i><i></i></div>
+                                                @if($product->sale > 0)
+                                                    <div class="bestsellers_price discount">
+                                                        {{ number_format($product->price * (100 - $product->sale) / 100) }}
+                                                        VNĐ <br>
+                                                        <span style="margin-left: 0;">{{ number_format($product->price) }} VNĐ</span></div>
+                                                @else
+                                                    <div
+                                                        class="bestsellers_price discount">{{ number_format($product->price) }}
+                                                        VNĐ <span style="color: #b8daff; !important;"></span>
+                                                    </div>
+                                                @endif
+                                            </div>
+                                        </div>
+                                        <div class="bestsellers_fav"><i class="fas fa-heart"></i></div>
+                                        <ul class="bestsellers_marks">
+                                            @if($product->sale > 0)
+                                                <li class="bestsellers_mark bestsellers_discount">-{{ $product->sale }}%
+                                                </li>
+                                            @else
+                                                <li class="bestsellers_mark bestsellers_new">new</li>
+                                            @endif
+                                        </ul>
                                     </div>
-                                </div>
-                                <div class="bestsellers_fav active"><i class="fas fa-heart"></i></div>
-                                <ul class="bestsellers_marks">
-                                    <li class="bestsellers_mark bestsellers_discount">-25%</li>
-                                    <li class="bestsellers_mark bestsellers_new">new</li>
-                                </ul>
+                                @endforeach
                             </div>
                         </div>
+                        <div class="bestsellers_panel panel">
+                            <div class="bestsellers_slider slider">
+                            @foreach($ipBestSell as $product)
+                                <!-- Best Sellers Item -->
+                                    <div class="bestsellers_item">
+                                        <div
+                                            class="bestsellers_item_container d-flex flex-row align-items-center justify-content-start">
+                                            <div class="bestsellers_image"><img
+                                                    src="{{ url('') .'/uploads/products/'. $product->images }}" alt="">
+                                            </div>
+                                            <div class="bestsellers_content">
+                                                <div class="bestsellers_category"><a
+                                                        href="#">{{ $product->cat_name }}</a>
+                                                </div>
+                                                <div class="bestsellers_name"><a
+                                                        href="product.blade.php">{{ $product->product_name }}</a></div>
+                                                <div class="rating_r rating_r_4 bestsellers_rating">
+                                                    <i></i><i></i><i></i><i></i><i></i></div>
+                                                @if($product->sale > 0)
+                                                    <div class="bestsellers_price discount">
+                                                        {{ number_format($product->price * (100 - $product->sale) / 100) }}
+                                                        VNĐ <br>
+                                                        <span style="margin-left: 0;">{{ number_format($product->price) }} VNĐ</span></div>
+                                                @else
+                                                    <div
+                                                        class="bestsellers_price discount">{{ number_format($product->price) }}
+                                                        VNĐ <span></span>
+                                                    </div>
+                                                @endif
+                                            </div>
+                                        </div>
+                                        <div class="bestsellers_fav"><i class="fas fa-heart"></i></div>
+                                        <ul class="bestsellers_marks">
+                                            @if($product->sale > 0)
+                                                <li class="bestsellers_mark bestsellers_discount">-{{ $product->sale }}%
+                                                </li>
+                                            @else
+                                                <li class="bestsellers_mark bestsellers_new">new</li>
+                                            @endif
+                                        </ul>
+                                    </div>
+                                @endforeach
+                            </div>
+                        </div>
+                        <div class="bestsellers_panel panel">
+                            <div class="bestsellers_slider slider">
+                            @foreach($samsungBestSell as $product)
+                                <!-- Best Sellers Item -->
+                                    <div class="bestsellers_item">
+                                        <div
+                                            class="bestsellers_item_container d-flex flex-row align-items-center justify-content-start">
+                                            <div class="bestsellers_image"><img
+                                                    src="{{ url('') .'/uploads/products/'. $product->images }}" alt="">
+                                            </div>
+                                            <div class="bestsellers_content">
+                                                <div class="bestsellers_category"><a
+                                                        href="#">{{ $product->cat_name }}</a>
+                                                </div>
+                                                <div class="bestsellers_name"><a
+                                                        href="product.blade.php">{{ $product->product_name }}</a></div>
+                                                <div class="rating_r rating_r_4 bestsellers_rating">
+                                                    <i></i><i></i><i></i><i></i><i></i></div>
+                                                @if($product->sale > 0)
+                                                    <div class="bestsellers_price discount">
+                                                        {{ number_format($product->price * (100 - $product->sale) / 100) }}
+                                                        VNĐ <br>
+                                                        <span style="margin-left: 0;">{{ number_format($product->price) }} VNĐ</span></div>
+                                                @else
+                                                    <div
+                                                        class="bestsellers_price discount">{{ number_format($product->price) }}
+                                                        VNĐ <span></span>
+                                                    </div>
+                                                @endif
+                                            </div>
+                                        </div>
+                                        <div class="bestsellers_fav"><i class="fas fa-heart"></i></div>
+                                        <ul class="bestsellers_marks">
+                                            @if($product->sale > 0)
+                                                <li class="bestsellers_mark bestsellers_discount">-{{ $product->sale }}%
+                                                </li>
+                                            @else
+                                                <li class="bestsellers_mark bestsellers_new">new</li>
+                                            @endif
+                                        </ul>
+                                    </div>
+                                @endforeach
+                            </div>
+                        </div>
+
                     </div>
                 </div>
 
@@ -511,75 +659,45 @@
                         </div>
                     </div>
                 </div>
+                <div class="col-lg-4 advert_col">
+                    <!-- Advert Item -->
 
-            </div>
-        </div>
-    </div>
-
-    <!-- Trends -->
-
-    <div class="trends">
-        <div class="trends_background" style="background-image:url(images/trends_background.jpg)"></div>
-        <div class="trends_overlay"></div>
-        <div class="container">
-            <div class="row">
-
-                <!-- Trends Content -->
-                <div class="col-lg-3">
-                    <div class="trends_container">
-                        <h2 class="trends_title">Trends 2018</h2>
-                        <div class="trends_text"><p>Lorem ipsum dolor sit amet, consectetur adipiscing Donec et.</p>
+                    <div class="advert d-flex flex-row align-items-center justify-content-start">
+                        <div class="advert_content">
+                            <div class="advert_title"><a href="#">Trends 2018</a></div>
+                            <div class="advert_text">Lorem ipsum dolor sit amet, consectetur.</div>
                         </div>
-                        <div class="trends_slider_nav">
-                            <div class="trends_prev trends_nav"><i class="fas fa-angle-left ml-auto"></i></div>
-                            <div class="trends_next trends_nav"><i class="fas fa-angle-right ml-auto"></i></div>
+                        <div class="ml-auto">
+                            <div class="advert_image"><img src="images/adv_3.png" alt=""></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 advert_col">
+                    <!-- Advert Item -->
+
+                    <div class="advert d-flex flex-row align-items-center justify-content-start">
+                        <div class="advert_content">
+                            <div class="advert_title"><a href="#">Trends 2018</a></div>
+                            <div class="advert_text">Lorem ipsum dolor sit amet, consectetur.</div>
+                        </div>
+                        <div class="ml-auto">
+                            <div class="advert_image"><img src="images/adv_3.png" alt=""></div>
                         </div>
                     </div>
                 </div>
 
-                <!-- Trends Slider -->
-                <div class="col-lg-9">
-                    <div class="trends_slider_container">
-                        <!-- Trends Slider -->
-                        <div class="owl-carousel owl-theme trends_slider">
-                            <!-- Trends Slider Item -->
-                            <div class="owl-item">
-                                <div class="trends_item is_new">
-                                    <div
-                                            class="trends_image d-flex flex-column align-items-center justify-content-center">
-                                        <img src="images/trends_3.jpg" alt=""></div>
-                                    <div class="trends_content">
-                                        <div class="trends_category"><a href="#">Smartphones</a></div>
-                                        <div class="trends_info clearfix">
-                                            <div class="trends_name"><a href="product.blade.php">Jump White</a>
-                                            </div>
-                                            <div class="trends_price">$379</div>
-                                        </div>
-                                    </div>
-                                    <ul class="trends_marks">
-                                        <li class="trends_mark trends_discount">-25%</li>
-                                        <li class="trends_mark trends_new">new</li>
-                                    </ul>
-                                    <div class="trends_fav"><i class="fas fa-heart"></i></div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
             </div>
         </div>
     </div>
-
     <!-- Reviews -->
-
     <div class="reviews">
         <div class="container">
             <div class="row">
                 <div class="col">
 
                     <div class="reviews_title_container">
-                        <h3 class="reviews_title">Latest Reviews</h3>
-                        <div class="reviews_all ml-auto"><a href="#">view all <span>reviews</span></a></div>
+                        <h3 class="reviews_title">Bình Luận Mới Nhất</h3>
+                        <div class="reviews_all ml-auto"><a href="#">Xem Tất Cả <span>Bình Luận</span></a></div>
                     </div>
                     <div class="reviews_slider_container">
                         <!-- Reviews Slider -->
@@ -610,42 +728,6 @@
             </div>
         </div>
     </div>
-    <!-- Recently Viewed -->
-    <div class="viewed">
-        <div class="container">
-            <div class="row">
-                <div class="col">
-                    <div class="viewed_title_container">
-                        <h3 class="viewed_title">Recently Viewed</h3>
-                        <div class="viewed_nav_container">
-                            <div class="viewed_nav viewed_prev"><i class="fas fa-chevron-left"></i></div>
-                            <div class="viewed_nav viewed_next"><i class="fas fa-chevron-right"></i></div>
-                        </div>
-                    </div>
-                    <div class="viewed_slider_container">
-                        <!-- Recently Viewed Slider -->
-                        <div class="owl-carousel owl-theme viewed_slider">
-                            <!-- Recently Viewed Item -->
-                            <div class="owl-item">
-                                <div
-                                        class="viewed_item d-flex flex-column align-items-center justify-content-center text-center">
-                                    <div class="viewed_image"><img src="images/view_6.jpg" alt=""></div>
-                                    <div class="viewed_content text-center">
-                                        <div class="viewed_price">$375</div>
-                                        <div class="viewed_name"><a href="#">Speedlink...</a></div>
-                                    </div>
-                                    <ul class="item_marks">
-                                        <li class="item_mark item_discount">-25%</li>
-                                        <li class="item_mark item_new">new</li>
-                                    </ul>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
     <!-- Brands -->
     <div class="brands">
         <div class="container">
@@ -656,35 +738,35 @@
                         <div class="owl-carousel owl-theme brands_slider">
                             <div class="owl-item">
                                 <div class="brands_item d-flex flex-column justify-content-center"><img
-                                            src="images/brands_1.jpg" alt=""></div>
+                                        src="images/brands_1.jpg" alt=""></div>
                             </div>
                             <div class="owl-item">
                                 <div class="brands_item d-flex flex-column justify-content-center"><img
-                                            src="images/brands_2.jpg" alt=""></div>
+                                        src="images/brands_2.jpg" alt=""></div>
                             </div>
                             <div class="owl-item">
                                 <div class="brands_item d-flex flex-column justify-content-center"><img
-                                            src="images/brands_3.jpg" alt=""></div>
+                                        src="images/brands_3.jpg" alt=""></div>
                             </div>
                             <div class="owl-item">
                                 <div class="brands_item d-flex flex-column justify-content-center"><img
-                                            src="images/brands_4.jpg" alt=""></div>
+                                        src="images/brands_4.jpg" alt=""></div>
                             </div>
                             <div class="owl-item">
                                 <div class="brands_item d-flex flex-column justify-content-center"><img
-                                            src="images/brands_5.jpg" alt=""></div>
+                                        src="images/brands_5.jpg" alt=""></div>
                             </div>
                             <div class="owl-item">
                                 <div class="brands_item d-flex flex-column justify-content-center"><img
-                                            src="images/brands_6.jpg" alt=""></div>
+                                        src="images/brands_6.jpg" alt=""></div>
                             </div>
                             <div class="owl-item">
                                 <div class="brands_item d-flex flex-column justify-content-center"><img
-                                            src="images/brands_7.jpg" alt=""></div>
+                                        src="images/brands_7.jpg" alt=""></div>
                             </div>
                             <div class="owl-item">
                                 <div class="brands_item d-flex flex-column justify-content-center"><img
-                                            src="images/brands_8.jpg" alt=""></div>
+                                        src="images/brands_8.jpg" alt=""></div>
                             </div>
 
                         </div>

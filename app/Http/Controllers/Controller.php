@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers;
 
+use App\Enums\Categories;
 use App\Models\Products;
 use App\Services\ProductService;
 use Illuminate\Foundation\Bus\DispatchesJobs;
@@ -21,14 +22,20 @@ class Controller extends BaseController
         $productIOSNew = ProductService::getProductNewByOS('IOS');
         $productAndroidNew = ProductService::getProductNewByOS('Android');
         $productWindowNew = ProductService::getProductNewByOS('Window'); //TODO: add window phone or s.t like this
+        $top10BestSell = ProductService::getTop10BestSell();
+        $ipBestSell = ProductService::getProductBestSellByCategory(Categories::IPHONE_ID);
+        $samsungBestSell = ProductService::getProductBestSellByCategory(Categories::SAMSUNG_ID);
         return view('index',
             [
                 'productOnSale' => $productOnSale,
                 'productRate' => $productRate,
-                'productDeals'=> $productDeals,
-                'productIOSNew'=> $productIOSNew,
-                'productAndroidNew'=> $productAndroidNew,
-                'productWindowNew'=> $productWindowNew,
+                'productDeals' => $productDeals,
+                'productIOSNew' => $productIOSNew,
+                'productAndroidNew' => $productAndroidNew,
+                'productWindowNew' => $productWindowNew,
+                'top10BestSell' => $top10BestSell,
+                'ipBestSell' => $ipBestSell,
+                'samsungBestSell' => $samsungBestSell,
             ]);
     }
 }
