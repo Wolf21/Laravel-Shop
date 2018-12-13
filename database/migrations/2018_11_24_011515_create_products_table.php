@@ -16,16 +16,10 @@ class CreateProductsTable extends Migration
             $table->increments('product_id');
             $table->string('name');
             $table->string('slug');
-            $table->string('intro');
-            $table->string('promotion');
             $table->smallInteger('sale')->default(0);
             $table->integer('rate')->default(0);
             $table->smallInteger('deal')->default(0);
-            $table->string('packet');
             $table->text('images');
-            $table->text('r_intro');
-            $table->text('review');
-            $table->string('tag');
             $table->decimal('price', 13, 2);
             $table->integer('status');
             $table->integer('cat_id')->unsigned();

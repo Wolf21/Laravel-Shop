@@ -16,9 +16,7 @@ class CreateOrdersTable extends Migration
             $table->increments('order_id');
             $table->integer('user_id')->unsigned();
             $table->foreign('user_id')->references('uid')->on('users')->onDelete('cascade');
-            $table->integer('quantity');
-            $table->decimal('sub_total', 13, 2);
-            $table->decimal('total', 13, 2);
+            $table->decimal('total_amount', 13, 2);
             $table->integer('status');
             $table->string('type',50);
             $table->string('note');            

@@ -27,9 +27,9 @@ class CreateProductDetailsTable extends Migration
             $table->string('connect');
             $table->string('pin');            
             $table->string('os');            
-            $table->text('note');            
+            $table->text('note');
             $table->integer('product_id')->unsigned();
-            $table->foreign('product_id')->references('product_id')->on('products')->onDelete('cascade');;
+            $table->foreign('product_id')->references('product_id')->on('products')->onDelete('cascade');
             $table->timestamps();
         });
     }
