@@ -13,11 +13,9 @@
 
 use Illuminate\Support\Facades\Route;
 
-Route::get('/', 'Controller@index');
+Route::get('/', 'Controller@index')->name('index');
 
-Route::get('/index', function () {
-    return view('index');
-});
+Route::get('/product/{product_id}', 'ProductController@productDetails');
 
 Route::get('/cart', function () {
     return view('cart');
@@ -25,10 +23,6 @@ Route::get('/cart', function () {
 
 Route::get('/contact', function () {
     return view('contact');
-});
-
-Route::get('/product', function () {
-    return view('product');
 });
 
 Route::get('/regular', function () {

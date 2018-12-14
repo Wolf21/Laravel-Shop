@@ -7,6 +7,35 @@ use App\Models\Products;
 
 class ProductService
 {
+
+    /**
+     * @param $product_id
+     * @return mixed
+     */
+
+    public static function getProductDetails($product_id)
+    {
+        $productDetails = Products::join('product_details', 'products.product_id', '=', 'product_details.product_id')
+            ->join('product_information', 'products.product_id', '=', 'product_information.product_id')
+            ->join('details_img', 'products.product_id', '=', 'details_img.product_id')
+            ->select(
+                'products.*',
+                'product_details.*',
+                'product_information.*',
+                'details_img.images_url'
+            )
+            ->where('products.product_id', $product_id)
+            ->first();
+
+        $productImg = Products::join('details_img', 'products.product_id', '=', 'details_img.product_id')
+            ->select(
+                'details_img.images_url'
+            )
+            ->where('products.product_id', $product_id)
+            ->get();
+        return [$productDetails, $productImg];
+    }
+
     /**
      * @return mixed
      */

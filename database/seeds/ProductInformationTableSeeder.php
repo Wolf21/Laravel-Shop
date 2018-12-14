@@ -12,7 +12,7 @@ class ProductInformationTableSeeder extends Seeder
      */
     public function run()
     {
-        
+
 
         \DB::table('product_information')->delete();
 
@@ -452,7 +452,7 @@ class ProductInformationTableSeeder extends Seeder
                     'updated_at' => '2016-11-28 23:04:05',
                 ),
         ));
-        
-        
+
+
     }
 }

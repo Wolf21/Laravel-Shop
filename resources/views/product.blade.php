@@ -15,16 +15,15 @@
     <div class="single_product">
         <div class="container">
             <div class="row">
-
                 <!-- Images -->
                 <div class="col-lg-2 order-lg-1 order-2">
                     <ul class="image_list">
-                        <li data-image="images/single_4.jpg"><img src="images/single_4.jpg" alt=""></li>
-                        <li data-image="images/single_2.jpg"><img src="images/single_2.jpg" alt=""></li>
-                        <li data-image="images/single_3.jpg"><img src="images/single_3.jpg" alt=""></li>
+                        @foreach($productImg as $img)
+                            <li data-image="{{url('') . '/uploads/products/' . $img->images_url}}"><img
+                                        src="{{url('') . '/uploads/products/' . $img->images_url}}" alt=""></li>
+                        @endforeach
                     </ul>
                 </div>
-
                 <!-- Selected Image -->
                 <div class="col-lg-5 order-lg-2 order-1">
                     <div class="image_selected"><img src="images/single_4.jpg" alt=""></div>
@@ -49,9 +48,9 @@
                                         <input id="quantity_input" type="text" pattern="[0-9]*" value="1">
                                         <div class="quantity_buttons">
                                             <div id="quantity_inc_button" class="quantity_inc quantity_control"><i
-                                                    class="fas fa-chevron-up"></i></div>
+                                                        class="fas fa-chevron-up"></i></div>
                                             <div id="quantity_dec_button" class="quantity_dec quantity_control"><i
-                                                    class="fas fa-chevron-down"></i></div>
+                                                        class="fas fa-chevron-down"></i></div>
                                         </div>
                                     </div>
 
@@ -118,7 +117,7 @@
                             <!-- Recently Viewed Item -->
                             <div class="owl-item">
                                 <div
-                                    class="viewed_item discount d-flex flex-column align-items-center justify-content-center text-center">
+                                        class="viewed_item discount d-flex flex-column align-items-center justify-content-center text-center">
                                     <div class="viewed_image"><img src="images/view_1.jpg" alt=""></div>
                                     <div class="viewed_content text-center">
                                         <div class="viewed_price">$225<span>$300</span></div>
@@ -134,7 +133,7 @@
                             <!-- Recently Viewed Item -->
                             <div class="owl-item">
                                 <div
-                                    class="viewed_item d-flex flex-column align-items-center justify-content-center text-center">
+                                        class="viewed_item d-flex flex-column align-items-center justify-content-center text-center">
                                     <div class="viewed_image"><img src="images/view_2.jpg" alt=""></div>
                                     <div class="viewed_content text-center">
                                         <div class="viewed_price">$379</div>
@@ -150,7 +149,7 @@
                             <!-- Recently Viewed Item -->
                             <div class="owl-item">
                                 <div
-                                    class="viewed_item d-flex flex-column align-items-center justify-content-center text-center">
+                                        class="viewed_item d-flex flex-column align-items-center justify-content-center text-center">
                                     <div class="viewed_image"><img src="images/view_3.jpg" alt=""></div>
                                     <div class="viewed_content text-center">
                                         <div class="viewed_price">$225</div>
@@ -166,7 +165,7 @@
                             <!-- Recently Viewed Item -->
                             <div class="owl-item">
                                 <div
-                                    class="viewed_item is_new d-flex flex-column align-items-center justify-content-center text-center">
+                                        class="viewed_item is_new d-flex flex-column align-items-center justify-content-center text-center">
                                     <div class="viewed_image"><img src="images/view_4.jpg" alt=""></div>
                                     <div class="viewed_content text-center">
                                         <div class="viewed_price">$379</div>
@@ -182,7 +181,7 @@
                             <!-- Recently Viewed Item -->
                             <div class="owl-item">
                                 <div
-                                    class="viewed_item discount d-flex flex-column align-items-center justify-content-center text-center">
+                                        class="viewed_item discount d-flex flex-column align-items-center justify-content-center text-center">
                                     <div class="viewed_image"><img src="images/view_5.jpg" alt=""></div>
                                     <div class="viewed_content text-center">
                                         <div class="viewed_price">$225<span>$300</span></div>
@@ -198,7 +197,7 @@
                             <!-- Recently Viewed Item -->
                             <div class="owl-item">
                                 <div
-                                    class="viewed_item d-flex flex-column align-items-center justify-content-center text-center">
+                                        class="viewed_item d-flex flex-column align-items-center justify-content-center text-center">
                                     <div class="viewed_image"><img src="images/view_6.jpg" alt=""></div>
                                     <div class="viewed_content text-center">
                                         <div class="viewed_price">$375</div>
@@ -232,35 +231,35 @@
 
                             <div class="owl-item">
                                 <div class="brands_item d-flex flex-column justify-content-center"><img
-                                        src="images/brands_1.jpg" alt=""></div>
+                                            src="images/brands_1.jpg" alt=""></div>
                             </div>
                             <div class="owl-item">
                                 <div class="brands_item d-flex flex-column justify-content-center"><img
-                                        src="images/brands_2.jpg" alt=""></div>
+                                            src="images/brands_2.jpg" alt=""></div>
                             </div>
                             <div class="owl-item">
                                 <div class="brands_item d-flex flex-column justify-content-center"><img
-                                        src="images/brands_3.jpg" alt=""></div>
+                                            src="images/brands_3.jpg" alt=""></div>
                             </div>
                             <div class="owl-item">
                                 <div class="brands_item d-flex flex-column justify-content-center"><img
-                                        src="images/brands_4.jpg" alt=""></div>
+                                            src="images/brands_4.jpg" alt=""></div>
                             </div>
                             <div class="owl-item">
                                 <div class="brands_item d-flex flex-column justify-content-center"><img
-                                        src="images/brands_5.jpg" alt=""></div>
+                                            src="images/brands_5.jpg" alt=""></div>
                             </div>
                             <div class="owl-item">
                                 <div class="brands_item d-flex flex-column justify-content-center"><img
-                                        src="images/brands_6.jpg" alt=""></div>
+                                            src="images/brands_6.jpg" alt=""></div>
                             </div>
                             <div class="owl-item">
                                 <div class="brands_item d-flex flex-column justify-content-center"><img
-                                        src="images/brands_7.jpg" alt=""></div>
+                                            src="images/brands_7.jpg" alt=""></div>
                             </div>
                             <div class="owl-item">
                                 <div class="brands_item d-flex flex-column justify-content-center"><img
-                                        src="images/brands_8.jpg" alt=""></div>
+                                            src="images/brands_8.jpg" alt=""></div>
                             </div>
 
                         </div>
