@@ -18,11 +18,13 @@ class ProductService
         $productDetails = Products::join('product_details', 'products.product_id', '=', 'product_details.product_id')
             ->join('product_information', 'products.product_id', '=', 'product_information.product_id')
             ->join('details_img', 'products.product_id', '=', 'details_img.product_id')
+            ->join('categories', 'products.cat_id', '=', 'categories.cat_id')
             ->select(
                 'products.*',
                 'product_details.*',
                 'product_information.*',
-                'details_img.images_url'
+                'details_img.images_url',
+                'categories.name AS cat_name'
             )
             ->where('products.product_id', $product_id)
             ->first();

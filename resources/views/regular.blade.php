@@ -45,7 +45,7 @@
         </div>
     </div>
 @stop
-@section('scripts')
+@section('script')
     <script src="plugins/easing/easing.js"></script>
     <script src="js/regular_custom.js"></script>
 @stop

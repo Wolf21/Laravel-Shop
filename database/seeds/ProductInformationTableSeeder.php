@@ -20,10 +20,9 @@ class ProductInformationTableSeeder extends Seeder
             0 =>
                 array(
                     'product_id' => 22,
-                    'intro' => 'Exynos 8890, 5.1 inch (1440 x 2560 pixels), Android 6.0 (Marshmallow)',
                     'promotion' => 'Trả góp 0%, Tặng Vali Lock & Lock, Tặng Combo Quà (Bao da S-View + Tai nghe Level Active)',
                     'packet' => ' Hộp, Sạc, Tai nghe, Sách hướng dẫn, Cáp OTG, Cáp, Cây lấy sim ',
-                    'r_intro' => '<p>Ch&iacute;nh thức ra mắt tại sự kiện MWC 2016 tổ chức tại Barcelona (T&acirc;y Ban Nha), smartphone Samsung Galaxy S7 sở hữu nhiều sự thay đổi nổi bật ở cả thiết kế, cấu h&igrave;nh v&agrave; những t&iacute;nh năng đi k&egrave;m. Chiếc điện thoại n&agrave;y hứa hẹn sẽ tạo n&ecirc;n sự b&ugrave;ng nổ trong ph&acirc;n kh&uacute;c cao cấp v&agrave; mang lại những th&agrave;nh c&ocirc;ng tiếp theo cho h&atilde;ng điện thoại H&agrave;n Quốc.</p>
+                    'intro' => 'Chính thức ra mắt tại sự kiện MWC 2016 tổ chức tại Barcelona (Tây Ban Nha), smartphone Samsung Galaxy S7 sở hữu nhiều sự thay đổi nổi bật ở cả thiết kế, cấu hình và những tính năng đi kèm. Chiếc điện thoại này hứa hẹn sẽ tạo nên sự bùng nổ trong ph&acirc;n kh&uacute;c cao cấp v&agrave; mang lại những th&agrave;nh c&ocirc;ng tiếp theo cho h&atilde;ng điện thoại H&agrave;n Quốc.</p>
 ',
                     'review' => '<p>Ch&iacute;nh thức ra mắt tại sự kiện MWC 2016 tổ chức tại Barcelona (T&acirc;y Ban Nha), smartphone&nbsp;<a href="https://fptshop.com.vn/dien-thoai/samsung-galaxy-s7" target="_blank"><strong>Samsung Galaxy S7</strong></a>&nbsp;sở hữu nhiều sự thay đổi nổi bật ở cả thiết kế, cấu h&igrave;nh v&agrave; những t&iacute;nh năng đi k&egrave;m.&nbsp;Chiếc điện thoại n&agrave;y hứa hẹn sẽ tạo n&ecirc;n sự b&ugrave;ng nổ trong ph&acirc;n kh&uacute;c cao cấp v&agrave; mang lại những th&agrave;nh c&ocirc;ng tiếp theo cho h&atilde;ng điện thoại H&agrave;n Quốc.</p>
 
@@ -98,10 +97,9 @@ class ProductInformationTableSeeder extends Seeder
             1 =>
                 array(
                     'product_id' => 23,
-                    'intro' => 'Exynos 8890, 5.1 inch (1440 x 2560 pixels), Android 6.0 (Marshmallow)',
                     'promotion' => 'Trả góp 0%, Tặng Vali Lock & Lock, Tặng Combo Quà (Bao da S-View + Tai nghe Level Active)',
                     'packet' => ' Hộp, Sạc, Tai nghe, Sách hướng dẫn, Cáp OTG, Cáp, Cây lấy sim ',
-                    'r_intro' => '<p>Ch&iacute;nh thức ra mắt tại sự kiện MWC 2016 tổ chức tại Barcelona (T&acirc;y Ban Nha), smartphone Samsung Galaxy S7 sở hữu nhiều sự thay đổi nổi bật ở cả thiết kế, cấu h&igrave;nh v&agrave; những t&iacute;nh năng đi k&egrave;m. Chiếc điện thoại n&agrave;y hứa hẹn sẽ tạo n&ecirc;n sự b&ugrave;ng nổ trong ph&acirc;n kh&uacute;c cao cấp v&agrave; mang lại những th&agrave;nh c&ocirc;ng tiếp theo cho h&atilde;ng điện thoại H&agrave;n Quốc.</p>
+                    'intro' => '<p>Ch&iacute;nh thức ra mắt tại sự kiện MWC 2016 tổ chức tại Barcelona (T&acirc;y Ban Nha), smartphone Samsung Galaxy S7 sở hữu nhiều sự thay đổi nổi bật ở cả thiết kế, cấu h&igrave;nh v&agrave; những t&iacute;nh năng đi k&egrave;m. Chiếc điện thoại n&agrave;y hứa hẹn sẽ tạo n&ecirc;n sự b&ugrave;ng nổ trong ph&acirc;n kh&uacute;c cao cấp v&agrave; mang lại những th&agrave;nh c&ocirc;ng tiếp theo cho h&atilde;ng điện thoại H&agrave;n Quốc.</p>
 ',
                     'review' => '<p>Ch&iacute;nh thức ra mắt tại sự kiện MWC 2016 tổ chức tại Barcelona (T&acirc;y Ban Nha), smartphone&nbsp;<a href="https://fptshop.com.vn/dien-thoai/samsung-galaxy-s7" target="_blank"><strong>Samsung Galaxy S7</strong></a>&nbsp;sở hữu nhiều sự thay đổi nổi bật ở cả thiết kế, cấu h&igrave;nh v&agrave; những t&iacute;nh năng đi k&egrave;m.&nbsp;Chiếc điện thoại n&agrave;y hứa hẹn sẽ tạo n&ecirc;n sự b&ugrave;ng nổ trong ph&acirc;n kh&uacute;c cao cấp v&agrave; mang lại những th&agrave;nh c&ocirc;ng tiếp theo cho h&atilde;ng điện thoại H&agrave;n Quốc.</p>
 
@@ -176,10 +174,9 @@ class ProductInformationTableSeeder extends Seeder
             2 =>
                 array(
                     'product_id' => 24,
-                    'intro' => 'Apple A10 mới, 2 cammera sau,Ram 3g, 5.5 inch (1920 x 1080 pixels)',
                     'promotion' => 'Trả góp 0%, Tặng Vali Lock & Lock, Tặng Combo Quà (Bao da S-View + Tai nghe Level Active)',
                     'packet' => '',
-                    'r_intro' => '<p>Với những t&iacute;nh năng vượt trội về camera, iPhone 7 Plus l&agrave; sản phẩm nổi bật c&ograve;n hơn cả iPhone khi c&ugrave;ng ra mắt, khả năng chụp ảnh zoom 10x với camera k&eacute;p v&agrave; chụp ch&acirc;n dung xo&aacute; ph&ocirc;ng đ&atilde; thuyết phục người d&ugrave;ng một c&aacute;ch ngọt ng&agrave;o nhất. Kh&ocirc;ng chỉ vậy, n&acirc;ng cấp về cấu h&igrave;nh, &acirc;m thanh, thiết kế tinh tế hơn v&agrave; phi&ecirc;n bản bộ nhớ l&ecirc;n đến 128 GB cũng khiến đ&acirc;y l&agrave; sản phẩm đ&aacute;ng mua nhất trong lần ra mắt loạt phi&ecirc;n bản mới của Apple</p>
+                    'intro' => '<p>Với những t&iacute;nh năng vượt trội về camera, iPhone 7 Plus l&agrave; sản phẩm nổi bật c&ograve;n hơn cả iPhone khi c&ugrave;ng ra mắt, khả năng chụp ảnh zoom 10x với camera k&eacute;p v&agrave; chụp ch&acirc;n dung xo&aacute; ph&ocirc;ng đ&atilde; thuyết phục người d&ugrave;ng một c&aacute;ch ngọt ng&agrave;o nhất. Kh&ocirc;ng chỉ vậy, n&acirc;ng cấp về cấu h&igrave;nh, &acirc;m thanh, thiết kế tinh tế hơn v&agrave; phi&ecirc;n bản bộ nhớ l&ecirc;n đến 128 GB cũng khiến đ&acirc;y l&agrave; sản phẩm đ&aacute;ng mua nhất trong lần ra mắt loạt phi&ecirc;n bản mới của Apple</p>
 ',
                     'review' => '<h3><strong>Thiết kế ho&agrave;n thiện hơn</strong></h3>
 
@@ -280,10 +277,9 @@ class ProductInformationTableSeeder extends Seeder
             3 =>
                 array(
                     'product_id' => 25,
-                    'intro' => 'Apple A10 mới, 2 cammera sau,Ram 3g, 5.5 inch (1920 x 1080 pixels)',
                     'promotion' => 'Trả góp 0%, Tặng Vali Lock & Lock, Tặng Combo Quà (Bao da S-View + Tai nghe Level Active)',
                     'packet' => '',
-                    'r_intro' => '<p>Với những t&iacute;nh năng vượt trội về camera, iPhone 7 Plus l&agrave; sản phẩm nổi bật c&ograve;n hơn cả iPhone khi c&ugrave;ng ra mắt, khả năng chụp ảnh zoom 10x với camera k&eacute;p v&agrave; chụp ch&acirc;n dung xo&aacute; ph&ocirc;ng đ&atilde; thuyết phục người d&ugrave;ng một c&aacute;ch ngọt ng&agrave;o nhất. Kh&ocirc;ng chỉ vậy, n&acirc;ng cấp về cấu h&igrave;nh, &acirc;m thanh, thiết kế tinh tế hơn v&agrave; phi&ecirc;n bản bộ nhớ l&ecirc;n đến 128 GB cũng khiến đ&acirc;y l&agrave; sản phẩm đ&aacute;ng mua nhất trong lần ra mắt loạt phi&ecirc;n bản mới của Apple</p>
+                    'intro' => '<p>Với những t&iacute;nh năng vượt trội về camera, iPhone 7 Plus l&agrave; sản phẩm nổi bật c&ograve;n hơn cả iPhone khi c&ugrave;ng ra mắt, khả năng chụp ảnh zoom 10x với camera k&eacute;p v&agrave; chụp ch&acirc;n dung xo&aacute; ph&ocirc;ng đ&atilde; thuyết phục người d&ugrave;ng một c&aacute;ch ngọt ng&agrave;o nhất. Kh&ocirc;ng chỉ vậy, n&acirc;ng cấp về cấu h&igrave;nh, &acirc;m thanh, thiết kế tinh tế hơn v&agrave; phi&ecirc;n bản bộ nhớ l&ecirc;n đến 128 GB cũng khiến đ&acirc;y l&agrave; sản phẩm đ&aacute;ng mua nhất trong lần ra mắt loạt phi&ecirc;n bản mới của Apple</p>
 ',
                     'review' => '<h3><strong>Thiết kế ho&agrave;n thiện hơn</strong></h3>
 
@@ -384,10 +380,9 @@ class ProductInformationTableSeeder extends Seeder
             4 =>
                 array(
                     'product_id' => 26,
-                    'intro' => 'sắp ra mắt',
                     'promotion' => 'Trả góp 0%, Tặng Vali Lock & Lock, Tặng Combo Quà (Bao da S-View + Tai nghe Level Active)',
                     'packet' => ' Hộp, Sạc, Tai nghe, Sách hướng dẫn, Cáp OTG, Cáp, Cây lấy sim ',
-                    'r_intro' => '<p>sắp ra mắt</p>
+                    'intro' => '<p>sắp ra mắt</p>
 ',
                     'review' => '<p>sản phẩm sắp được ra mắt</p>
 ',
@@ -401,7 +396,7 @@ class ProductInformationTableSeeder extends Seeder
                     'intro' => 'sắp ra mắt',
                     'promotion' => 'Trả góp 0%, Tặng Vali Lock & Lock, Tặng Combo Quà (Bao da S-View + Tai nghe Level Active)',
                     'packet' => ' Hộp, Sạc, Tai nghe, Sách hướng dẫn, Cáp OTG, Cáp, Cây lấy sim ',
-                    'r_intro' => '<p>sắp ra mắt</p>
+                    'intro' => '<p>sắp ra mắt</p>
 ',
                     'review' => '<p>sản phẩm sắp được ra mắt</p>
 ',
@@ -412,10 +407,9 @@ class ProductInformationTableSeeder extends Seeder
             6 =>
                 array(
                     'product_id' => 28,
-                    'intro' => 'sắp ra mắt',
                     'promotion' => 'Trả góp 0%, Tặng Vali Lock & Lock, Tặng Combo Quà (Bao da S-View + Tai nghe Level Active)',
                     'packet' => ' Hộp, Sạc, Tai nghe, Sách hướng dẫn, Cáp OTG, Cáp, Cây lấy sim ',
-                    'r_intro' => '<p>sắp ra mắt</p>
+                    'intro' => '<p>sắp ra mắt</p>
 ',
                     'review' => '<p>sản phẩm sắp được ra mắt</p>
 ',
@@ -426,10 +420,9 @@ class ProductInformationTableSeeder extends Seeder
             7 =>
                 array(
                     'product_id' => 34,
-                    'intro' => 'sắp ra mắt',
                     'promotion' => 'Trả góp 0%, Tặng Vali Lock & Lock, Tặng Combo Quà (Bao da S-View + Tai nghe Level Active)',
                     'packet' => ' Hộp, Sạc, Tai nghe, Sách hướng dẫn, Cáp OTG, Cáp, Cây lấy sim ',
-                    'r_intro' => '<p>sắp ra mắt</p>
+                    'intro' => '<p>sắp ra mắt</p>
 ',
                     'review' => '<p>sản phẩm sắp được ra mắt</p>
 ',
@@ -440,10 +433,9 @@ class ProductInformationTableSeeder extends Seeder
             8 =>
                 array(
                     'product_id' => 35,
-                    'intro' => 'sắp ra mắt',
                     'promotion' => 'Trả góp 0%, Tặng Vali Lock & Lock, Tặng Combo Quà (Bao da S-View + Tai nghe Level Active)',
                     'packet' => ' Hộp, Sạc, Tai nghe, Sách hướng dẫn, Cáp OTG, Cáp, Cây lấy sim ',
-                    'r_intro' => '<p>sắp ra mắt</p>
+                    'intro' => '<p>sắp ra mắt</p>
 ',
                     'review' => '<p>sản phẩm sắp được ra mắt</p>
 ',

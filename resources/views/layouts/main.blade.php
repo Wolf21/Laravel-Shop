@@ -20,19 +20,20 @@
     @show
     @yield('content')
 
+    @include('component.brands')
     @include('layouts.footer')
     @section('modal')
     @show
 </div>
 </body>
-<script src="{{ url('js/jquery-3.3.1.min.js') }}"></script>
-<script src="{{ url('styles/bootstrap4/popper.js') }}"></script>
-<script src="{{ url('styles/bootstrap4/bootstrap.min.js') }}"></script>
-<script src="{{ url('plugins/greensock/TweenMax.min.js') }}"></script>
-<script src="{{ url('plugins/greensock/TimelineMax.min.js') }}"></script>
-<script src="{{ url('plugins/scrollmagic/ScrollMagic.min.js') }}"></script>
-<script src="{{ url('plugins/greensock/animation.gsap.min.js') }}"></script>
-<script src="{{ url('plugins/greensock/ScrollToPlugin.min.js') }}"></script>
+<script type="text/javascript" src="{{ url('js/jquery-3.3.1.min.js') }}"></script>
+<script type="text/javascript" src="{{ url('styles/bootstrap4/popper.js') }}"></script>
+<script type="text/javascript" src="{{ url('styles/bootstrap4/bootstrap.min.js') }}"></script>
+<script type="text/javascript" src="{{ url('plugins/greensock/TweenMax.min.js') }}"></script>
+<script type="text/javascript" src="{{ url('plugins/greensock/TimelineMax.min.js') }}"></script>
+<script type="text/javascript" src="{{ url('plugins/scrollmagic/ScrollMagic.min.js') }}"></script>
+<script type="text/javascript" src="{{ url('plugins/greensock/animation.gsap.min.js') }}"></script>
+<script type="text/javascript" src="{{ url('plugins/greensock/ScrollToPlugin.min.js') }}"></script>
 @section('script')
 @show
 </html>

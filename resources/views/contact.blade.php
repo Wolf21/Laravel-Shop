@@ -93,7 +93,7 @@
         </div>
     </div>
 @stop
-@section('scripts')
+@section('script')
     <script src="{{ url('plugins/easing/easing.js') }}"></script>
     <script
         src="{{ url('https://maps.googleapis.com/maps/api/js?v=3.exp&key=AIzaSyCIwF204lFZg1y4kPSIhKaHEXMLYxxuMhA') }}">

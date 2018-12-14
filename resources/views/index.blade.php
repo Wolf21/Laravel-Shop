@@ -15,7 +15,7 @@
         <div class="banner_background" style="background-image:url(images/banner_background.jpg)"></div>
         <div class="container fill_height">
             <div class="row fill_height">
-                <div class="banner_product_image"><img src="images/banner_product.png" alt=""></div>
+                <div class="banner_product_image"><img src="{{ url('images/banner_product.png') }}" alt=""></div>
                 <div class="col-lg-5 offset-lg-4 fill_height">
                     <div class="banner_content">
                         <h1 class="banner_text">new era of smartphones</h1>
@@ -36,7 +36,7 @@
                 <div class="col-lg-3 col-md-6 char_col">
 
                     <div class="char_item d-flex flex-row align-items-center justify-content-start">
-                        <div class="char_icon"><img src="images/char_1.png" alt=""></div>
+                        <div class="char_icon"><img src="{{ url('images/char_1.png') }}" alt=""></div>
                         <div class="char_content">
                             <div class="char_title">Miễn Phí Vận Chuyển</div>
                             <div class="char_subtitle">Từ 10,000,000 VNĐ</div>
@@ -48,7 +48,7 @@
                 <div class="col-lg-3 col-md-6 char_col">
 
                     <div class="char_item d-flex flex-row align-items-center justify-content-start">
-                        <div class="char_icon"><img src="images/char_2.png" alt=""></div>
+                        <div class="char_icon"><img src="{{ url('images/char_2.png') }}" alt=""></div>
                         <div class="char_content">
                             <div class="char_title">Miễn Phí Vận Chuyển</div>
                             <div class="char_subtitle">Dưới 15 KM</div>
@@ -60,7 +60,7 @@
                 <div class="col-lg-3 col-md-6 char_col">
 
                     <div class="char_item d-flex flex-row align-items-center justify-content-start">
-                        <div class="char_icon"><img src="images/char_3.png" alt=""></div>
+                        <div class="char_icon"><img src="{{ url('images/char_3.png') }}" alt=""></div>
                         <div class="char_content">
                             <div class="char_title">Miễn Phí Vận Chuyển</div>
                             <div class="char_subtitle">Khách Hàng Thân Thiết</div>
@@ -72,7 +72,7 @@
                 <div class="col-lg-3 col-md-6 char_col">
 
                     <div class="char_item d-flex flex-row align-items-center justify-content-start">
-                        <div class="char_icon"><img src="images/char_4.png" alt=""></div>
+                        <div class="char_icon"><img src="{{ url('images/char_4.png') }}" alt=""></div>
                         <div class="char_content">
                             <div class="char_title">Miễn Phí Vận Chuyển</div>
                             <div class="char_subtitle">Đổi Trả Do Lỗi Shop</div>
@@ -302,7 +302,7 @@
                                 </div>
                                 <div class="col-lg-8 col-md-6 fill_height">
                                     <div class="banner_2_image_container">
-                                        <div class="banner_2_image"><img src="images/banner_2_product.png" alt="">
+                                        <div class="banner_2_image"><img src="{{ url('images/banner_2_product.png') }}" alt="">
                                         </div>
                                     </div>
                                 </div>
@@ -476,7 +476,7 @@
                             <div class="col-lg-3">
                                 <div class="arrivals_single clearfix">
                                     <div class="d-flex flex-column align-items-center justify-content-center">
-                                        <div class="arrivals_single_image"><img src="images/new_single.png" alt="">
+                                        <div class="arrivals_single_image"><img src="{{ url('images/new_single.png') }}" alt="">
                                         </div>
                                         <div class="arrivals_single_content">
                                             <div class="arrivals_single_category"><a href="#">Smartphones</a></div>
@@ -688,7 +688,7 @@
                             <div class="advert_text">Lorem ipsum dolor sit amet, consectetur.</div>
                         </div>
                         <div class="ml-auto">
-                            <div class="advert_image"><img src="images/adv_3.png" alt=""></div>
+                            <div class="advert_image"><img src="{{ url('images/adv_3.png') }}" alt=""></div>
                         </div>
                     </div>
                 </div>
@@ -701,7 +701,7 @@
                             <div class="advert_text">Lorem ipsum dolor sit amet, consectetur.</div>
                         </div>
                         <div class="ml-auto">
-                            <div class="advert_image"><img src="images/adv_3.png" alt=""></div>
+                            <div class="advert_image"><img src="{{ url('images/adv_3.png') }}" alt=""></div>
                         </div>
                     </div>
                 </div>
@@ -714,7 +714,7 @@
                             <div class="advert_text">Lorem ipsum dolor sit amet, consectetur.</div>
                         </div>
                         <div class="ml-auto">
-                            <div class="advert_image"><img src="images/adv_3.png" alt=""></div>
+                            <div class="advert_image"><img src="{{ url('images/adv_3.png') }}" alt=""></div>
                         </div>
                     </div>
                 </div>
@@ -739,7 +739,7 @@
                             <div class="owl-item">
                                 <div class="review d-flex flex-row align-items-start justify-content-start">
                                     <div>
-                                        <div class="review_image"><img src="images/review_3.jpg" alt=""></div>
+                                        <div class="review_image"><img src="{{ url('images/review_3.jpg') }}" alt=""></div>
                                     </div>
                                     <div class="review_content">
                                         <div class="review_name">Emilia Clarke</div>
@@ -761,62 +761,10 @@
             </div>
         </div>
     </div>
-    <!-- Brands -->
-    <div class="brands">
-        <div class="container">
-            <div class="row">
-                <div class="col">
-                    <div class="brands_slider_container">
-                        <!-- Brands Slider -->
-                        <div class="owl-carousel owl-theme brands_slider">
-                            <div class="owl-item">
-                                <div class="brands_item d-flex flex-column justify-content-center"><img
-                                            src="images/brands_1.jpg" alt=""></div>
-                            </div>
-                            <div class="owl-item">
-                                <div class="brands_item d-flex flex-column justify-content-center"><img
-                                            src="images/brands_2.jpg" alt=""></div>
-                            </div>
-                            <div class="owl-item">
-                                <div class="brands_item d-flex flex-column justify-content-center"><img
-                                            src="images/brands_3.jpg" alt=""></div>
-                            </div>
-                            <div class="owl-item">
-                                <div class="brands_item d-flex flex-column justify-content-center"><img
-                                            src="images/brands_4.jpg" alt=""></div>
-                            </div>
-                            <div class="owl-item">
-                                <div class="brands_item d-flex flex-column justify-content-center"><img
-                                            src="images/brands_5.jpg" alt=""></div>
-                            </div>
-                            <div class="owl-item">
-                                <div class="brands_item d-flex flex-column justify-content-center"><img
-                                            src="images/brands_6.jpg" alt=""></div>
-                            </div>
-                            <div class="owl-item">
-                                <div class="brands_item d-flex flex-column justify-content-center"><img
-                                            src="images/brands_7.jpg" alt=""></div>
-                            </div>
-                            <div class="owl-item">
-                                <div class="brands_item d-flex flex-column justify-content-center"><img
-                                            src="images/brands_8.jpg" alt=""></div>
-                            </div>
-
-                        </div>
-
-                        <!-- Brands Slider Navigation -->
-                        <div class="brands_nav brands_prev"><i class="fas fa-chevron-left"></i></div>
-                        <div class="brands_nav brands_next"><i class="fas fa-chevron-right"></i></div>
-
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
 @stop
 @section('script')
-    <script src="{{ url('plugins/OwlCarousel2-2.2.1/owl.carousel.js') }}"></script>
-    <script src="{{ url('plugins/slick-1.8.0/slick.js') }}"></script>
-    <script src="{{ url('plugins/easing/easing.js') }}"></script>
-    <script src="{{ url('js/custom.js') }}"></script>
+    <script type="text/javascript" src="{{ url('plugins/OwlCarousel2-2.2.1/owl.carousel.js') }}"></script>
+    <script type="text/javascript" src="{{ url('plugins/slick-1.8.0/slick.js') }}"></script>
+    <script type="text/javascript" src="{{ url('plugins/easing/easing.js') }}"></script>
+    <script type="text/javascript" src="{{ url('js/custom.js') }}"></script>
 @stop

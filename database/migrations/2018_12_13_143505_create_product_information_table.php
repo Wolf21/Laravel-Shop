@@ -17,10 +17,9 @@ class CreateProductInformationTable extends Migration
             $table->increments('id');
             $table->string('promotion');
             $table->string('packet');
-            $table->text('r_intro');
             $table->text('review');
             $table->string('tag');
-            $table->string('intro');
+            $table->text('intro');
             $table->integer('product_id')->unsigned();
             $table->foreign('product_id')->references('product_id')->on('products')->onDelete('cascade');
             $table->timestamps();

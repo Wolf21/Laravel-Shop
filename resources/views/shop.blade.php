@@ -709,7 +709,7 @@
         </div>
     </div>
 @stop
-@section('scripts')
+@section('script')
     <script src="{{ url('plugins/OwlCarousel2-2.2.1/owl.carousel.js') }}"></script>
     <script src="{{ url('plugins/easing/easing.js') }}"></script>
     <script src="{{ url('plugins/Isotope/isotope.pkgd.min.js') }}"></script>

@@ -65,7 +65,7 @@
         </div>
     </div>
 @stop
-@section('scripts')
+@section('script')
     <script src="{{ url('plugins/easing/easing.js') }}"></script>
     <script src="{{ url('js/cart_custom.js') }}"></script>
 @stop
