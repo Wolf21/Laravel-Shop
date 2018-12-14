@@ -3,7 +3,6 @@
 namespace App\Http\Controllers;
 
 use App\Enums\Categories;
-use App\Models\Products;
 use App\Services\ProductService;
 use Illuminate\Foundation\Bus\DispatchesJobs;
 use Illuminate\Routing\Controller as BaseController;
@@ -25,17 +24,17 @@ class Controller extends BaseController
         $top10BestSell = ProductService::getTop10BestSell();
         $ipBestSell = ProductService::getProductBestSellByCategory(Categories::IPHONE_ID);
         $samsungBestSell = ProductService::getProductBestSellByCategory(Categories::SAMSUNG_ID);
-        return view('index',
-            [
-                'productOnSale' => $productOnSale,
-                'productRate' => $productRate,
-                'productDeals' => $productDeals,
-                'productIOSNew' => $productIOSNew,
-                'productAndroidNew' => $productAndroidNew,
-                'productWindowNew' => $productWindowNew,
-                'top10BestSell' => $top10BestSell,
-                'ipBestSell' => $ipBestSell,
-                'samsungBestSell' => $samsungBestSell,
-            ]);
+        $data = [
+            'productOnSale' => $productOnSale,
+            'productRate' => $productRate,
+            'productDeals' => $productDeals,
+            'productIOSNew' => $productIOSNew,
+            'productAndroidNew' => $productAndroidNew,
+            'productWindowNew' => $productWindowNew,
+            'top10BestSell' => $top10BestSell,
+            'ipBestSell' => $ipBestSell,
+            'samsungBestSell' => $samsungBestSell,
+        ];
+        return view('index', $data);
     }
 }

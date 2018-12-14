@@ -97,23 +97,27 @@
                             @foreach($productDeals as $product)
                                 <!-- Deals Item -->
                                     <div class="owl-item deals_item">
-                                        <div class="deals_image"><img
-                                                src="{{ url('/') .'/uploads/products/'. $product->images }}" alt="">
+                                        <div class="deals_image"><a
+                                                    href="{{url('') . '/product/' . $product->product_id}}"><img
+                                                        src="{{ url('') .'/uploads/products/'. $product->images }}"
+                                                        alt=""></a>
                                         </div>
                                         <div class="deals_content">
                                             <div class="deals_info_line d-flex flex-row justify-content-start">
-                                                <div class="deals_item_category"><a
-                                                        href="#">{{ $product->cat_name }}</a>
+                                                <div class="deals_item_category">{{ $product->cat_name }}
                                                 </div>
                                                 <div
-                                                    class="deals_item_price_a ml-auto price_old">{{ number_format($product->price) }}
+                                                        class="deals_item_price_a ml-auto price_old">{{ number_format($product->price) }}
                                                     VNĐ
                                                 </div>
                                             </div>
                                             <div class="deals_info_line d-flex flex-row justify-content-start">
-                                                <div class="deals_item_name">{{ $product->product_name }}</div>
+                                                <div class="deals_item_name">
+                                                    <a href="{{url('') . '/product/' . $product->product_id}}">{{ $product->product_name }}
+                                                    </a>
+                                                </div>
                                                 <div
-                                                    class="deals_item_price ml-auto">{{ number_format($product->price * (100 - $product->sale) / 100) }}
+                                                        class="deals_item_price ml-auto">{{ number_format($product->price * (100 - $product->sale) / 100) }}
                                                     VNĐ
                                                 </div>
                                             </div>
@@ -127,7 +131,7 @@
                                                 <div class="available_bar"><span style="width:17%"></span></div>
                                             </div>
                                             <div
-                                                class="deals_timer d-flex flex-row align-items-center justify-content-start">
+                                                    class="deals_timer d-flex flex-row align-items-center justify-content-start">
                                                 <div class="deals_timer_title_container">
                                                     <div class="deals_timer_title">Hurry Up</div>
                                                     <div class="deals_timer_subtitle">Offer ends in:</div>
@@ -179,15 +183,20 @@
                                         <div class="featured_slider_item">
                                             <div class="border_active"></div>
                                             <div
-                                                class="product_item discount d-flex flex-column align-items-center justify-content-center text-center">
+                                                    class="product_item discount d-flex flex-column align-items-center justify-content-center text-center">
                                                 <div
-                                                    class="product_image d-flex flex-column align-items-center justify-content-center">
-                                                    <img src="{{ url('') .'/uploads/products/'. $product->images }}"
-                                                         alt="">
+                                                        class="product_image d-flex flex-column align-items-center justify-content-center">
+                                                    <a
+                                                            href="{{url('') . '/product/' . $product->product_id}}">
+                                                        <img src="{{ url('') .'/uploads/products/'. $product->images }}"
+                                                             alt="">
+                                                    </a>
                                                 </div>
                                                 <div class="product_content">
                                                     <div class="product_name">
-                                                        <div><a href="product.blade.php">{{ $product->name }}</a></div>
+                                                        <div>
+                                                            <a href="{{url('') . '/product/' . $product->product_id}}">{{ $product->name }}</a>
+                                                        </div>
                                                     </div>
                                                     <div class="product_price discount">
                                                         {{ number_format($product->price * (100 - $product->sale) / 100) }}
@@ -217,15 +226,19 @@
                                         <div class="featured_slider_item">
                                             <div class="border_active"></div>
                                             <div
-                                                class="product_item discount d-flex flex-column align-items-center justify-content-center text-center">
+                                                    class="product_item discount d-flex flex-column align-items-center justify-content-center text-center">
                                                 <div
-                                                    class="product_image d-flex flex-column align-items-center justify-content-center">
-                                                    <img src="{{ url('') .'/uploads/products/'. $product->images }}"
-                                                         alt="">
+                                                        class="product_image d-flex flex-column align-items-center justify-content-center">
+                                                    <a href="{{url('') . '/product/' . $product->product_id}}">
+                                                        <img src="{{ url('') .'/uploads/products/'. $product->images }}"
+                                                             alt="">
+                                                    </a>
                                                 </div>
                                                 <div class="product_content">
                                                     <div class="product_name">
-                                                        <div><a href="product.blade.php">{{ $product->name }}</a></div>
+                                                        <div>
+                                                            <a href="{{url('') . '/product/' . $product->product_id}}">{{ $product->name }}</a>
+                                                        </div>
                                                     </div>
                                                     @if($product->sale > 0)
                                                         <div class="product_price discount">
@@ -327,14 +340,17 @@
                                         <div class="arrivals_slider_item">
                                             <div class="border_active"></div>
                                             <div
-                                                class="product_item is_new d-flex flex-column align-items-center justify-content-center text-center">
+                                                    class="product_item is_new d-flex flex-column align-items-center justify-content-center text-center">
                                                 <div
-                                                    class="product_image d-flex flex-column align-items-center justify-content-center">
-                                                    <img src="{{ url('') .'/uploads/products/'. $product->images }}"
-                                                         alt=""></div>
+                                                        class="product_image d-flex flex-column align-items-center justify-content-center">
+                                                    <a href="{{url('') . '/product/' . $product->product_id}}">
+                                                        <img src="{{ url('') .'/uploads/products/'. $product->images }}"
+                                                             alt=""></a></div>
                                                 <div class="product_content">
                                                     <div class="product_name">
-                                                        <div><a href="product.html">{{ $product->name }}</a></div>
+                                                        <div>
+                                                            <a href="{{url('') . '/product/' . $product->product_id}}">{{ $product->name }}</a>
+                                                        </div>
                                                     </div>
                                                     <div class="product_price">{{ number_format($product->price) }}
                                                         VNĐ
@@ -370,14 +386,17 @@
                                             <div class="arrivals_slider_item">
                                                 <div class="border_active"></div>
                                                 <div
-                                                    class="product_item is_new d-flex flex-column align-items-center justify-content-center text-center">
+                                                        class="product_item is_new d-flex flex-column align-items-center justify-content-center text-center">
                                                     <div
-                                                        class="product_image d-flex flex-column align-items-center justify-content-center">
-                                                        <img src="{{ url('') .'/uploads/products/'. $product->images }}"
-                                                             alt=""></div>
+                                                            class="product_image d-flex flex-column align-items-center justify-content-center">
+                                                        <a href="{{url('') . '/product/' . $product->product_id}}">
+                                                            <img src="{{ url('') .'/uploads/products/'. $product->images }}"
+                                                                 alt=""></a></div>
                                                     <div class="product_content">
                                                         <div class="product_name">
-                                                            <div><a href="product.html">{{ $product->name }}</a></div>
+                                                            <div>
+                                                                <a href="{{url('') . '/product/' . $product->product_id}}">{{ $product->name }}</a>
+                                                            </div>
                                                         </div>
                                                         <div class="product_price">{{ number_format($product->price) }}
                                                             VNĐ
@@ -414,14 +433,17 @@
                                             <div class="arrivals_slider_item">
                                                 <div class="border_active"></div>
                                                 <div
-                                                    class="product_item is_new d-flex flex-column align-items-center justify-content-center text-center">
+                                                        class="product_item is_new d-flex flex-column align-items-center justify-content-center text-center">
                                                     <div
-                                                        class="product_image d-flex flex-column align-items-center justify-content-center">
-                                                        <img src="{{ url('') .'/uploads/products/'. $product->images }}"
-                                                             alt=""></div>
+                                                            class="product_image d-flex flex-column align-items-center justify-content-center">
+                                                        <a href="{{url('') . '/product/' . $product->product_id}}">
+                                                            <img src="{{ url('') .'/uploads/products/'. $product->images }}"
+                                                                 alt=""></a></div>
                                                     <div class="product_content">
                                                         <div class="product_name">
-                                                            <div><a href="product.html">{{ $product->name }}</a></div>
+                                                            <div>
+                                                                <a href="{{url('') . '/product/' . $product->product_id}}">{{ $product->name }}</a>
+                                                            </div>
                                                         </div>
                                                         <div class="product_price">{{ number_format($product->price) }}
                                                             VNĐ
@@ -470,7 +492,7 @@
                                             </form>
                                         </div>
                                         <div class="arrivals_single_fav product_fav active"><i
-                                                class="fas fa-heart"></i>
+                                                    class="fas fa-heart"></i>
                                         </div>
                                         <ul class="arrivals_single_marks product_marks">
                                             <li class="arrivals_single_mark product_mark product_new">new</li>
@@ -506,26 +528,29 @@
                                 <!-- Best Sellers Item -->
                                     <div class="bestsellers_item">
                                         <div
-                                            class="bestsellers_item_container d-flex flex-row align-items-center justify-content-start">
-                                            <div class="bestsellers_image"><img
-                                                    src="{{ url('') .'/uploads/products/'. $product->images }}" alt="">
+                                                class="bestsellers_item_container d-flex flex-row align-items-center justify-content-start">
+                                            <div class="bestsellers_image">
+                                                <a href="{{url('') . '/product/' . $product->product_id}}"><img
+                                                            src="{{ url('') .'/uploads/products/'. $product->images }}"
+                                                            alt=""></a>
                                             </div>
                                             <div class="bestsellers_content">
-                                                <div class="bestsellers_category"><a
-                                                        href="#">{{ $product->cat_name }}</a>
+                                                <div class="bestsellers_category">{{ $product->cat_name }}
                                                 </div>
                                                 <div class="bestsellers_name"><a
-                                                        href="product.blade.php">{{ $product->product_name }}</a></div>
+                                                            href="{{url('') . '/product/' . $product->product_id}}">{{ $product->product_name }}</a>
+                                                </div>
                                                 <div class="rating_r rating_r_4 bestsellers_rating">
                                                     <i></i><i></i><i></i><i></i><i></i></div>
                                                 @if($product->sale > 0)
                                                     <div class="bestsellers_price discount">
                                                         {{ number_format($product->price * (100 - $product->sale) / 100) }}
                                                         VNĐ <br>
-                                                        <span style="margin-left: 0;">{{ number_format($product->price) }} VNĐ</span></div>
+                                                        <span style="margin-left: 0;">{{ number_format($product->price) }}
+                                                            VNĐ</span></div>
                                                 @else
                                                     <div
-                                                        class="bestsellers_price discount">{{ number_format($product->price) }}
+                                                            class="bestsellers_price discount">{{ number_format($product->price) }}
                                                         VNĐ <span style="color: #b8daff; !important;"></span>
                                                     </div>
                                                 @endif
@@ -550,26 +575,30 @@
                                 <!-- Best Sellers Item -->
                                     <div class="bestsellers_item">
                                         <div
-                                            class="bestsellers_item_container d-flex flex-row align-items-center justify-content-start">
-                                            <div class="bestsellers_image"><img
-                                                    src="{{ url('') .'/uploads/products/'. $product->images }}" alt="">
+                                                class="bestsellers_item_container d-flex flex-row align-items-center justify-content-start">
+                                            <div class="bestsellers_image">
+                                                <a href="{{url('') . '/product/' . $product->product_id}}"><img
+                                                            src="{{ url('') .'/uploads/products/'. $product->images }}"
+                                                            alt=""></a>
                                             </div>
                                             <div class="bestsellers_content">
                                                 <div class="bestsellers_category"><a
-                                                        href="#">{{ $product->cat_name }}</a>
+                                                            href="#">{{ $product->cat_name }}</a>
                                                 </div>
                                                 <div class="bestsellers_name"><a
-                                                        href="product.blade.php">{{ $product->product_name }}</a></div>
+                                                            href="{{url('') . '/product/' . $product->product_id}}">{{ $product->product_name }}</a>
+                                                </div>
                                                 <div class="rating_r rating_r_4 bestsellers_rating">
                                                     <i></i><i></i><i></i><i></i><i></i></div>
                                                 @if($product->sale > 0)
                                                     <div class="bestsellers_price discount">
                                                         {{ number_format($product->price * (100 - $product->sale) / 100) }}
                                                         VNĐ <br>
-                                                        <span style="margin-left: 0;">{{ number_format($product->price) }} VNĐ</span></div>
+                                                        <span style="margin-left: 0;">{{ number_format($product->price) }}
+                                                            VNĐ</span></div>
                                                 @else
                                                     <div
-                                                        class="bestsellers_price discount">{{ number_format($product->price) }}
+                                                            class="bestsellers_price discount">{{ number_format($product->price) }}
                                                         VNĐ <span></span>
                                                     </div>
                                                 @endif
@@ -594,26 +623,30 @@
                                 <!-- Best Sellers Item -->
                                     <div class="bestsellers_item">
                                         <div
-                                            class="bestsellers_item_container d-flex flex-row align-items-center justify-content-start">
-                                            <div class="bestsellers_image"><img
-                                                    src="{{ url('') .'/uploads/products/'. $product->images }}" alt="">
+                                                class="bestsellers_item_container d-flex flex-row align-items-center justify-content-start">
+                                            <div class="bestsellers_image">
+                                                <a href="{{url('') . '/product/' . $product->product_id}}"><img
+                                                            src="{{ url('') .'/uploads/products/'. $product->images }}"
+                                                            alt=""></a>
                                             </div>
                                             <div class="bestsellers_content">
                                                 <div class="bestsellers_category"><a
-                                                        href="#">{{ $product->cat_name }}</a>
+                                                            href="#">{{ $product->cat_name }}</a>
                                                 </div>
                                                 <div class="bestsellers_name"><a
-                                                        href="product.blade.php">{{ $product->product_name }}</a></div>
+                                                            href="{{url('') . '/product/' . $product->product_id}}">{{ $product->product_name }}</a>
+                                                </div>
                                                 <div class="rating_r rating_r_4 bestsellers_rating">
                                                     <i></i><i></i><i></i><i></i><i></i></div>
                                                 @if($product->sale > 0)
                                                     <div class="bestsellers_price discount">
                                                         {{ number_format($product->price * (100 - $product->sale) / 100) }}
                                                         VNĐ <br>
-                                                        <span style="margin-left: 0;">{{ number_format($product->price) }} VNĐ</span></div>
+                                                        <span style="margin-left: 0;">{{ number_format($product->price) }}
+                                                            VNĐ</span></div>
                                                 @else
                                                     <div
-                                                        class="bestsellers_price discount">{{ number_format($product->price) }}
+                                                            class="bestsellers_price discount">{{ number_format($product->price) }}
                                                         VNĐ <span></span>
                                                     </div>
                                                 @endif
@@ -738,35 +771,35 @@
                         <div class="owl-carousel owl-theme brands_slider">
                             <div class="owl-item">
                                 <div class="brands_item d-flex flex-column justify-content-center"><img
-                                        src="images/brands_1.jpg" alt=""></div>
+                                            src="images/brands_1.jpg" alt=""></div>
                             </div>
                             <div class="owl-item">
                                 <div class="brands_item d-flex flex-column justify-content-center"><img
-                                        src="images/brands_2.jpg" alt=""></div>
+                                            src="images/brands_2.jpg" alt=""></div>
                             </div>
                             <div class="owl-item">
                                 <div class="brands_item d-flex flex-column justify-content-center"><img
-                                        src="images/brands_3.jpg" alt=""></div>
+                                            src="images/brands_3.jpg" alt=""></div>
                             </div>
                             <div class="owl-item">
                                 <div class="brands_item d-flex flex-column justify-content-center"><img
-                                        src="images/brands_4.jpg" alt=""></div>
+                                            src="images/brands_4.jpg" alt=""></div>
                             </div>
                             <div class="owl-item">
                                 <div class="brands_item d-flex flex-column justify-content-center"><img
-                                        src="images/brands_5.jpg" alt=""></div>
+                                            src="images/brands_5.jpg" alt=""></div>
                             </div>
                             <div class="owl-item">
                                 <div class="brands_item d-flex flex-column justify-content-center"><img
-                                        src="images/brands_6.jpg" alt=""></div>
+                                            src="images/brands_6.jpg" alt=""></div>
                             </div>
                             <div class="owl-item">
                                 <div class="brands_item d-flex flex-column justify-content-center"><img
-                                        src="images/brands_7.jpg" alt=""></div>
+                                            src="images/brands_7.jpg" alt=""></div>
                             </div>
                             <div class="owl-item">
                                 <div class="brands_item d-flex flex-column justify-content-center"><img
-                                        src="images/brands_8.jpg" alt=""></div>
+                                            src="images/brands_8.jpg" alt=""></div>
                             </div>
 
                         </div>
